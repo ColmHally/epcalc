@@ -22434,7 +22434,7 @@
     	return child_ctx;
     }
 
-    // (792:8) {#if xScaleTime(InterventionTime) >= 100}
+    // (805:8) {#if xScaleTime(InterventionTime) >= 100}
     function create_if_block$1(ctx) {
     	var div, span, t, html_tag, raw_value = math_inline("\\mathcal{R}_0=" + (ctx.R0).toFixed(2) ) + "";
 
@@ -22445,13 +22445,13 @@
     			t = text("⟵ ");
     			html_tag = new HtmlTag(raw_value, null);
     			set_style(span, "font-size", "13px");
-    			add_location(span, file$3, 793, 10, 27039);
+    			add_location(span, file$3, 806, 10, 27025);
     			set_style(div, "position", "absolute");
     			set_style(div, "opacity", "0.5");
     			set_style(div, "top", "-2px");
     			set_style(div, "left", "-97px");
     			set_style(div, "width", "120px");
-    			add_location(div, file$3, 792, 10, 26947);
+    			add_location(div, file$3, 805, 10, 26933);
     		},
 
     		m: function mount(target, anchor) {
@@ -22473,11 +22473,11 @@
     			}
     		}
     	};
-    	dispatch_dev("SvelteRegisterBlock", { block, id: create_if_block$1.name, type: "if", source: "(792:8) {#if xScaleTime(InterventionTime) >= 100}", ctx });
+    	dispatch_dev("SvelteRegisterBlock", { block, id: create_if_block$1.name, type: "if", source: "(805:8) {#if xScaleTime(InterventionTime) >= 100}", ctx });
     	return block;
     }
 
-    // (904:12) {#each milestones as milestone}
+    // (917:12) {#each milestones as milestone}
     function create_each_block$1(ctx) {
     	var div1, span, t0, div0, raw_value = ctx.milestone[1] + "", t1, current;
 
@@ -22499,8 +22499,8 @@
     			div0 = element("div");
     			t1 = space();
     			set_style(span, "opacity", "0.3");
-    			add_location(span, file$3, 905, 16, 32574);
-    			attr_dev(div0, "class", "tick svelte-1vzb36m");
+    			add_location(span, file$3, 918, 16, 32538);
+    			attr_dev(div0, "class", "tick svelte-17tkxes");
     			set_style(div0, "position", "relative");
     			set_style(div0, "left", "0px");
     			set_style(div0, "top", "35px");
@@ -22509,11 +22509,11 @@
     			set_style(div0, "background-color", "white");
     			set_style(div0, "padding-left", "4px");
     			set_style(div0, "padding-right", "4px");
-    			add_location(div0, file$3, 906, 18, 32683);
+    			add_location(div0, file$3, 919, 18, 32647);
     			set_style(div1, "position", "absolute");
     			set_style(div1, "left", "" + (ctx.xScaleTime(ctx.milestone[0])+8) + "px");
     			set_style(div1, "top", "-30px");
-    			add_location(div1, file$3, 904, 14, 32475);
+    			add_location(div1, file$3, 917, 14, 32439);
     		},
 
     		m: function mount(target, anchor) {
@@ -22557,12 +22557,12 @@
     			destroy_component(arrow);
     		}
     	};
-    	dispatch_dev("SvelteRegisterBlock", { block, id: create_each_block$1.name, type: "each", source: "(904:12) {#each milestones as milestone}", ctx });
+    	dispatch_dev("SvelteRegisterBlock", { block, id: create_each_block$1.name, type: "each", source: "(917:12) {#each milestones as milestone}", ctx });
     	return block;
     }
 
     function create_fragment$3(ctx) {
-    	var link, t0, h2, t2, div75, div50, div49, div0, b0, br0, t4, t5_value = ctx.Math.round(ctx.indexToTime(ctx.active_)) + "", t5, t6, div7, span0, t7, t8, div5, div1, t10, div4, div2, span1, t12, i0, t13_value = formatNumber$1(ctx.Math.round(ctx.N*ctx.Iters[ctx.active_][0])) + "", t13, t14, t15_value = (100*ctx.Iters[ctx.active_][0]).toFixed(2) + "", t15, t16, t17, div3, span2, t19, i1, t20_value = formatNumber$1(ctx.Math.round(ctx.N*ctx.get_d(ctx.active_)[0])) + "", t20, t21, t22, div6, t24, div14, updating_checked, t25, t26, div12, div8, t28, div11, div9, span3, t30, i2, t31_value = formatNumber$1(ctx.Math.round(ctx.N*ctx.Iters[ctx.active_][1])) + "", t31, t32, t33_value = (100*ctx.Iters[ctx.active_][1]).toFixed(2) + "", t33, t34, t35, div10, span4, t37, i3, t38_value = formatNumber$1(ctx.Math.round(ctx.N*ctx.get_d(ctx.active_)[1])) + "", t38, t39, t40, div13, t42, div21, updating_checked_1, t43, t44, div19, div15, t46, div18, div16, span5, t48, i4, t49_value = formatNumber$1(ctx.Math.round(ctx.N*ctx.Iters[ctx.active_][2])) + "", t49, t50, t51_value = (100*ctx.Iters[ctx.active_][2]).toFixed(2) + "", t51, t52, t53, div17, span6, t55, i5, t56_value = formatNumber$1(ctx.Math.round(ctx.N*ctx.get_d(ctx.active_)[2])) + "", t56, t57, t58, div20, t59, i6, t61, t62, div28, t63, t64, div26, div22, t66, div25, div23, span7, t68, i7, t69_value = formatNumber$1(ctx.Math.round(ctx.N* (1-ctx.Iters[ctx.active_][0]-ctx.Iters[ctx.active_][1]-ctx.Iters[ctx.active_][2])+ctx.I0 )) + "", t69, t70, t71_value = ((100*(1-ctx.Iters[ctx.active_][0]-ctx.Iters[ctx.active_][1]-ctx.Iters[ctx.active_][2]-ctx.I0/ctx.N))).toFixed(2) + "", t71, t72, t73, div24, span8, t75, i8, t76_value = formatNumber$1(ctx.Math.round(ctx.N*(ctx.get_d(ctx.active_)[3]+ctx.get_d(ctx.active_)[4]+ctx.get_d(ctx.active_)[5]+ctx.get_d(ctx.active_)[6]+ctx.get_d(ctx.active_)[7]) )) + "", t76, t77, t78, div27, t80, div34, updating_checked_2, t81, t82, div32, div29, t84, div31, div30, span9, t86, i9, t87_value = formatNumber$1(ctx.Math.round(ctx.N*(ctx.Iters[ctx.active_][7]+ctx.Iters[ctx.active_][8]) )) + "", t87, t88, t89_value = (100*(ctx.Iters[ctx.active_][7]+ctx.Iters[ctx.active_][8])).toFixed(2) + "", t89, t90, t91, div33, t93, div41, t94, updating_checked_3, t95, div39, div35, t97, div37, div36, span10, t99, i10, t100_value = formatNumber$1(ctx.Math.round(ctx.N*(ctx.Iters[ctx.active_][5]+ctx.Iters[ctx.active_][6]) )) + "", t100, t101, t102_value = (100*(ctx.Iters[ctx.active_][5]+ctx.Iters[ctx.active_][6])).toFixed(2) + "", t102, t103, t104, div38, span11, t106, i11, t107_value = formatNumber$1(ctx.Math.round(ctx.N*(ctx.get_d(ctx.active_)[5]+ctx.get_d(ctx.active_)[6]))) + "", t107, t108, t109, div40, t111, div48, t112, updating_checked_4, t113, div46, div42, t115, div45, div43, span12, t117, i12, t118_value = formatNumber$1(ctx.Math.round(ctx.N*ctx.Iters[ctx.active_][9])) + "", t118, t119, t120_value = (100*ctx.Iters[ctx.active_][9]).toFixed(2) + "", t120, t121, t122, div44, span13, t124, i13, t125_value = formatNumber$1(ctx.Math.round(ctx.N*ctx.get_d(ctx.active_)[9])) + "", t125, t126, t127, div47, t129, div74, div51, updating_checked_5, updating_active, t130, div52, t131, div53, t132, div61, div60, div54, span14, raw0_value = math_inline("\\mathcal{R}_t=" + (ctx.R0*ctx.InterventionAmt).toFixed(2) ) + "", t133, t134, show_if = ctx.xScaleTime(ctx.InterventionTime) >= 100, t135, div58, div55, t136, t137_value = format("d")(ctx.InterventionTime) + "", t137, t138, span15, div56, t140, div57, svg, g1, g0, path, t141, div59, t142, div69, div68, div67, div66, div63, div62, t143, br1, t144, div65, div64, t145_value = (ctx.InterventionAmt).toFixed(2) + "", t145, t146, input0, t147, div70, t148, div73, div72, updating_checked_6, div71, t150, div117, div79, div76, t152, div77, t153, div78, t155, div116, div85, div80, t157, div81, t158, br2, t159, div82, t160_value = format(",")(ctx.Math.round(ctx.N)) + "", t160, t161, input1, t162, div83, t163, br3, t164, div84, t165, t166, input2, t167, div90, div88, div86, t168, html_tag, raw1_value = math_inline("\\mathcal{R}_0") + "", t169, div87, t170, br4, t171, div89, t172, t173, input3, t174, div96, div91, t176, div92, t177, html_tag_1, raw2_value = math_inline("T_{\\text{inc}}") + "", t178, br5, t179, div93, t180_value = (ctx.D_incbation).toFixed(2) + "", t180, t181, t182, input4, t183, div94, t184, html_tag_2, raw3_value = math_inline("T_{\\text{inf}}") + "", t185, br6, t186, div95, t187, t188, t189, input5, t190, div97, t191, div103, div98, t193, div99, t194, br7, t195, div100, t196_value = (ctx.CFR*100).toFixed(2) + "", t196, t197, t198, input6, t199, div101, t200, br8, t201, div102, t202, t203, t204, input7, input7_min_value, t205, div109, div104, t207, div105, t208, br9, t209, div106, t210, t211, t212, input8, t213, div107, t214, br10, t215, div108, t216, t217, t218, input9, t219, div115, div110, t221, div111, t222, br11, t223, div112, t224_value = (ctx.P_SEVERE*100).toFixed(2) + "", t224, t225, t226, input10, t227, div113, t228, br12, t229, div114, t230, t231, t232, input11, t233, div118, t234, p0, t236, p1, t237, b1, a0, t239, t240, b2, t242, span16, b3, t244, span17, b4, t246, span18, b5, t248, a1, t250, a2, t252, span19, t253, t254, p2, t255, t256_value = ctx.Math.round(ctx.indexToTime(ctx.active_)) + "", t256, t257, a3, t259, input12, t260, t261_value = ((1-(ctx.Math.pow(1 - (ctx.Iters[ctx.active_][2])*(0.45/100), ctx.p_num_ind)))*100).toFixed(5) + "", t261, t262, a4, t264, t265, p3, t267, div119, table, tr0, th0, t268, th1, t270, th2, t271, br13, t272, html_tag_3, raw5_value = math_inline("\\mathcal{R}_0") + "", t273, th3, t274, br14, t275, html_tag_4, raw6_value = math_inline("T_{\\text{inc}}") + "", t276, t277, th4, t278, br15, t279, html_tag_5, raw7_value = math_inline("T_{\\text{inf}}") + "", t280, t281, tr1, td0, a5, t283, td1, t285, td2, t287, td3, t289, td4, t291, tr2, td5, a6, t293, td6, t295, td7, t297, td8, t299, td9, t301, tr3, td10, a7, t303, td11, t305, td12, t307, td13, t309, td14, t311, tr4, td15, a8, t313, td16, t315, td17, t317, td18, t318, td19, t319, tr5, td20, a9, t321, td21, t323, td22, t325, td23, t327, td24, t328, tr6, td25, a10, t330, td26, t332, td27, t334, td28, t336, td29, t338, tr7, td30, a11, t340, td31, t342, td32, t344, td33, t346, td34, t348, tr8, td35, a12, t350, td36, t352, td37, t353, td38, t355, td39, t356, tr9, td40, a13, t358, td41, t360, td42, t362, td43, t363, td44, t364, tr10, td45, a14, t366, td46, t368, td47, t369, td48, t371, td49, t373, td50, t374, tr11, td51, a15, t376, td52, t378, td53, t380, td54, t381, td55, t382, p4, t383, a16, t385, a17, t387, t388, p5, t389, a18, t391, a19, t393, t394, p6, a20, script, t395, p7, b6, br16, t397, html_tag_6, raw8_value = math_inline("I,R") + "", t398, i14, t400, i15, t402, i16, t404, t405, p8, b7, br17, t407, a21, t409, a22, t411, a23, t413, a24, t415, t416, div122, div121, div120, t418, form, textarea, current, dispose;
+    	var link, t0, h2, t2, div75, div50, div49, div0, b0, br0, t4, t5_value = ctx.Math.round(ctx.indexToTime(ctx.active_)) + "", t5, t6, div7, span0, t7, t8, div5, div1, t10, div4, div2, span1, t12, i0, t13_value = formatNumber$1(ctx.Math.round(ctx.N*ctx.Iters[ctx.active_][0])) + "", t13, t14, t15_value = (100*ctx.Iters[ctx.active_][0]).toFixed(2) + "", t15, t16, t17, div3, span2, t19, i1, t20_value = formatNumber$1(ctx.Math.round(ctx.N*ctx.get_d(ctx.active_)[0])) + "", t20, t21, t22, div6, t24, div14, updating_checked, t25, t26, div12, div8, t28, div11, div9, span3, t30, i2, t31_value = formatNumber$1(ctx.Math.round(ctx.N*ctx.Iters[ctx.active_][1])) + "", t31, t32, t33_value = (100*ctx.Iters[ctx.active_][1]).toFixed(2) + "", t33, t34, t35, div10, span4, t37, i3, t38_value = formatNumber$1(ctx.Math.round(ctx.N*ctx.get_d(ctx.active_)[1])) + "", t38, t39, t40, div13, t42, div21, updating_checked_1, t43, t44, div19, div15, t46, div18, div16, span5, t48, i4, t49_value = formatNumber$1(ctx.Math.round(ctx.N*ctx.Iters[ctx.active_][2])) + "", t49, t50, t51_value = (100*ctx.Iters[ctx.active_][2]).toFixed(2) + "", t51, t52, t53, div17, span6, t55, i5, t56_value = formatNumber$1(ctx.Math.round(ctx.N*ctx.get_d(ctx.active_)[2])) + "", t56, t57, t58, div20, t59, i6, t61, t62, div28, t63, t64, div26, div22, t66, div25, div23, span7, t68, i7, t69_value = formatNumber$1(ctx.Math.round(ctx.N* (1-ctx.Iters[ctx.active_][0]-ctx.Iters[ctx.active_][1]-ctx.Iters[ctx.active_][2])+ctx.I0 )) + "", t69, t70, t71_value = ((100*(1-ctx.Iters[ctx.active_][0]-ctx.Iters[ctx.active_][1]-ctx.Iters[ctx.active_][2]-ctx.I0/ctx.N))).toFixed(2) + "", t71, t72, t73, div24, span8, t75, i8, t76_value = formatNumber$1(ctx.Math.round(ctx.N*(ctx.get_d(ctx.active_)[3]+ctx.get_d(ctx.active_)[4]+ctx.get_d(ctx.active_)[5]+ctx.get_d(ctx.active_)[6]+ctx.get_d(ctx.active_)[7]) )) + "", t76, t77, t78, div27, t80, div34, updating_checked_2, t81, t82, div32, div29, t84, div31, div30, span9, t86, i9, t87_value = formatNumber$1(ctx.Math.round(ctx.N*(ctx.Iters[ctx.active_][7]+ctx.Iters[ctx.active_][8]) )) + "", t87, t88, t89_value = (100*(ctx.Iters[ctx.active_][7]+ctx.Iters[ctx.active_][8])).toFixed(2) + "", t89, t90, t91, div33, t93, div41, t94, updating_checked_3, t95, div39, div35, t97, div37, div36, span10, t99, i10, t100_value = formatNumber$1(ctx.Math.round(ctx.N*(ctx.Iters[ctx.active_][5]+ctx.Iters[ctx.active_][6]) )) + "", t100, t101, t102_value = (100*(ctx.Iters[ctx.active_][5]+ctx.Iters[ctx.active_][6])).toFixed(2) + "", t102, t103, t104, div38, span11, t106, i11, t107_value = formatNumber$1(ctx.Math.round(ctx.N*(ctx.get_d(ctx.active_)[5]+ctx.get_d(ctx.active_)[6]))) + "", t107, t108, t109, div40, t111, div48, t112, updating_checked_4, t113, div46, div42, t115, div45, div43, span12, t117, i12, t118_value = formatNumber$1(ctx.Math.round(ctx.N*ctx.Iters[ctx.active_][9])) + "", t118, t119, t120_value = (100*ctx.Iters[ctx.active_][9]).toFixed(2) + "", t120, t121, t122, div44, span13, t124, i13, t125_value = formatNumber$1(ctx.Math.round(ctx.N*ctx.get_d(ctx.active_)[9])) + "", t125, t126, t127, div47, t129, div74, div51, updating_checked_5, updating_active, t130, div52, t131, div53, t132, div61, div60, div54, span14, raw0_value = math_inline("\\mathcal{R}_t=" + (ctx.R0*ctx.InterventionAmt).toFixed(2) ) + "", t133, t134, show_if = ctx.xScaleTime(ctx.InterventionTime) >= 100, t135, div58, div55, t136, t137_value = format("d")(ctx.InterventionTime) + "", t137, t138, span15, div56, t140, div57, svg, g1, g0, path, t141, div59, t142, div69, div68, div67, div66, div63, div62, t143, br1, t144, div65, div64, t145_value = (ctx.InterventionAmt).toFixed(2) + "", t145, t146, input0, t147, div70, t148, div73, div72, updating_checked_6, div71, t150, div117, div79, div76, t152, div77, t153, div78, t155, div116, div85, div80, t157, div81, t158, br2, t159, div82, t160_value = format(",")(ctx.Math.round(ctx.N)) + "", t160, t161, input1, t162, div83, t163, br3, t164, div84, t165, t166, input2, t167, div90, div88, div86, t168, html_tag, raw1_value = math_inline("\\mathcal{R}_0") + "", t169, div87, t170, br4, t171, div89, t172, t173, input3, t174, div96, div91, t176, div92, t177, html_tag_1, raw2_value = math_inline("T_{\\text{inc}}") + "", t178, br5, t179, div93, t180_value = (ctx.D_incubation).toFixed(2) + "", t180, t181, t182, input4, t183, div94, t184, html_tag_2, raw3_value = math_inline("T_{\\text{inf}}") + "", t185, br6, t186, div95, t187, t188, t189, input5, t190, div97, t191, div103, div98, t193, div99, t194, br7, t195, div100, t196_value = (ctx.CFR*100).toFixed(2) + "", t196, t197, t198, input6, t199, div101, t200, br8, t201, div102, t202, t203, t204, input7, input7_min_value, t205, div109, div104, t207, div105, t208, br9, t209, div106, t210, t211, t212, input8, t213, div107, t214, br10, t215, div108, t216, t217, t218, input9, t219, div115, div110, t221, div111, t222, br11, t223, div112, t224_value = (ctx.P_SEVERE*100).toFixed(2) + "", t224, t225, t226, input10, t227, div113, t228, br12, t229, div114, t230, t231, t232, input11, t233, div118, t234, p0, t236, p1, t237, b1, a0, t239, t240, b2, t242, span16, b3, t244, span17, b4, t246, span18, b5, t248, a1, t250, a2, t252, span19, t253, t254, p2, t255, t256_value = ctx.Math.round(ctx.indexToTime(ctx.active_)) + "", t256, t257, a3, t259, input12, t260, t261_value = ((1-(ctx.Math.pow(1 - (ctx.Iters[ctx.active_][2])*(0.45/100), ctx.p_num_ind)))*100).toFixed(5) + "", t261, t262, a4, t264, t265, p3, t267, div119, table, tr0, th0, t268, th1, t270, th2, t271, br13, t272, html_tag_3, raw5_value = math_inline("\\mathcal{R}_0") + "", t273, th3, t274, br14, t275, html_tag_4, raw6_value = math_inline("T_{\\text{inc}}") + "", t276, t277, th4, t278, br15, t279, html_tag_5, raw7_value = math_inline("T_{\\text{inf}}") + "", t280, t281, tr1, td0, a5, t283, td1, t285, td2, t287, td3, t289, td4, t291, tr2, td5, a6, t293, td6, t295, td7, t297, td8, t299, td9, t301, tr3, td10, a7, t303, td11, t305, td12, t307, td13, t309, td14, t311, tr4, td15, a8, t313, td16, t315, td17, t317, td18, t318, td19, t319, tr5, td20, a9, t321, td21, t323, td22, t325, td23, t327, td24, t328, tr6, td25, a10, t330, td26, t332, td27, t334, td28, t336, td29, t338, tr7, td30, a11, t340, td31, t342, td32, t344, td33, t346, td34, t348, tr8, td35, a12, t350, td36, t352, td37, t353, td38, t355, td39, t356, tr9, td40, a13, t358, td41, t360, td42, t362, td43, t363, td44, t364, tr10, td45, a14, t366, td46, t368, td47, t369, td48, t371, td49, t373, td50, t374, tr11, td51, a15, t376, td52, t378, td53, t380, td54, t381, td55, t382, p4, t383, a16, t385, a17, t387, t388, p5, t389, a18, t391, a19, t393, a20, t395, t396, p6, b6, br16, t398, html_tag_6, raw8_value = math_inline("I,R") + "", t399, i14, t401, i15, t403, i16, t405, t406, p7, b7, br17, t408, a21, t410, a22, t412, a23, t414, a24, t416, t417, div122, div121, div120, t419, form, textarea, current, dispose;
 
     	var checkbox0 = new Checkbox({
     		props: { color: "#CCC" },
@@ -22785,7 +22785,7 @@
     			t12 = space();
     			i0 = element("i");
     			t13 = text(t13_value);
-    			t14 = text(" \n                                  (");
+    			t14 = text("\n                                  (");
     			t15 = text(t15_value);
     			t16 = text("%)");
     			t17 = space();
@@ -22816,7 +22816,7 @@
     			t30 = space();
     			i2 = element("i");
     			t31 = text(t31_value);
-    			t32 = text(" \n                                  (");
+    			t32 = text("\n                                  (");
     			t33 = text(t33_value);
     			t34 = text("%)");
     			t35 = space();
@@ -22847,7 +22847,7 @@
     			t48 = space();
     			i4 = element("i");
     			t49 = text(t49_value);
-    			t50 = text(" \n                                  (");
+    			t50 = text("\n                                  (");
     			t51 = text(t51_value);
     			t52 = text("%)");
     			t53 = space();
@@ -22881,7 +22881,7 @@
     			t68 = space();
     			i7 = element("i");
     			t69 = text(t69_value);
-    			t70 = text(" \n                                  (");
+    			t70 = text("\n                                  (");
     			t71 = text(t71_value);
     			t72 = text("%)");
     			t73 = space();
@@ -22912,7 +22912,7 @@
     			t86 = space();
     			i9 = element("i");
     			t87 = text(t87_value);
-    			t88 = text(" \n                                  (");
+    			t88 = text("\n                                  (");
     			t89 = text(t89_value);
     			t90 = text("%)");
     			t91 = space();
@@ -22935,7 +22935,7 @@
     			t99 = space();
     			i10 = element("i");
     			t100 = text(t100_value);
-    			t101 = text(" \n                                  (");
+    			t101 = text("\n                                  (");
     			t102 = text(t102_value);
     			t103 = text("%)");
     			t104 = space();
@@ -22966,7 +22966,7 @@
     			t117 = space();
     			i12 = element("i");
     			t118 = text(t118_value);
-    			t119 = text(" \n                                  (");
+    			t119 = text("\n                                  (");
     			t120 = text(t120_value);
     			t121 = text("%)");
     			t122 = space();
@@ -23463,63 +23463,62 @@
     			t391 = text(" or email me ");
     			a19 = element("a");
     			a19.textContent = "here";
-    			t393 = text(".");
-    			t394 = space();
-    			p6 = element("p");
+    			t393 = text(". My ");
     			a20 = element("a");
-    			script = element("script");
-    			t395 = space();
-    			p7 = element("p");
+    			a20.textContent = "website";
+    			t395 = text(".");
+    			t396 = space();
+    			p6 = element("p");
     			b6 = element("b");
     			b6.textContent = "Model Details ";
     			br16 = element("br");
-    			t397 = text("\nThe clinical dynamics in this model are an elaboration on SEIR that simulates the disease's progression at a higher resolution, subdividing ");
-    			t398 = text(" into ");
+    			t398 = text("\nThe clinical dynamics in this model are an elaboration on SEIR that simulates the disease's progression at a higher resolution, subdividing ");
+    			t399 = text(" into ");
     			i14 = element("i");
     			i14.textContent = "mild";
-    			t400 = text(" (patients who recover without the need for hospitalization), ");
+    			t401 = text(" (patients who recover without the need for hospitalization), ");
     			i15 = element("i");
     			i15.textContent = "moderate";
-    			t402 = text(" (patients who require hospitalization but survive) and ");
+    			t403 = text(" (patients who require hospitalization but survive) and ");
     			i16 = element("i");
     			i16.textContent = "fatal";
-    			t404 = text(" (patients who require hospitalization and do not survive). Each of these variables follows its own trajectory to the final outcome, and the sum of these compartments add up to the values predicted by SEIR. Please refer to the source code for details. Note that we assume, for simplicity, that all fatalities come from hospitals, and that all fatal cases are admitted to hospitals immediately after the infectious period.");
-    			t405 = space();
-    			p8 = element("p");
+    			t405 = text(" (patients who require hospitalization and do not survive). Each of these variables follows its own trajectory to the final outcome, and the sum of these compartments add up to the values predicted by SEIR. Please refer to the source code for details. Note that we assume, for simplicity, that all fatalities come from hospitals, and that all fatal cases are admitted to hospitals immediately after the infectious period.");
+    			t406 = space();
+    			p7 = element("p");
     			b7 = element("b");
     			b7.textContent = "Acknowledgements ";
     			br17 = element("br");
-    			t407 = space();
+    			t408 = space();
     			a21 = element("a");
     			a21.textContent = "Steven De Keninck";
-    			t409 = text(" for RK4 Integrator. ");
+    			t410 = text(" for RK4 Integrator. ");
     			a22 = element("a");
     			a22.textContent = "Chris Olah";
-    			t411 = text(", ");
+    			t412 = text(", ");
     			a23 = element("a");
     			a23.textContent = "Shan Carter";
-    			t413 = text(" and ");
+    			t414 = text(" and ");
     			a24 = element("a");
     			a24.textContent = "Ludwig Schubert";
-    			t415 = text(" wonderful feedback. Charlie Huang for context and discussion.");
-    			t416 = space();
+    			t416 = text(" wonderful feedback. Charlie Huang for context and discussion.");
+    			t417 = space();
     			div122 = element("div");
     			div121 = element("div");
     			div120 = element("div");
     			div120.textContent = "Export parameters:";
-    			t418 = space();
+    			t419 = space();
     			form = element("form");
     			textarea = element("textarea");
     			attr_dev(link, "rel", "stylesheet");
     			attr_dev(link, "href", "https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.css");
     			attr_dev(link, "integrity", "sha384-bsHo4/LA+lkZv61JspMDQB9QP1TtO4IgOf2yYS+J6VdAYLVyx1c3XKcsHh0Vy8Ws");
     			attr_dev(link, "crossorigin", "anonymous");
-    			add_location(link, file$3, 394, 0, 12680);
-    			attr_dev(h2, "class", "svelte-1vzb36m");
-    			add_location(h2, file$3, 592, 0, 16654);
-    			add_location(b0, file$3, 598, 182, 17034);
-    			add_location(br0, file$3, 598, 192, 17044);
-    			attr_dev(div0, "class", "legendtext svelte-1vzb36m");
+    			add_location(link, file$3, 407, 0, 12716);
+    			attr_dev(h2, "class", "svelte-17tkxes");
+    			add_location(h2, file$3, 605, 0, 16672);
+    			add_location(b0, file$3, 611, 182, 17052);
+    			add_location(br0, file$3, 611, 192, 17062);
+    			attr_dev(div0, "class", "legendtext svelte-17tkxes");
     			set_style(div0, "position", "absolute");
     			set_style(div0, "left", "-16px");
     			set_style(div0, "top", "-34px");
@@ -23529,259 +23528,259 @@
     			set_style(div0, "line-height", "16px");
     			set_style(div0, "font-weight", "normal");
     			set_style(div0, "text-align", "center");
-    			add_location(div0, file$3, 598, 6, 16858);
+    			add_location(div0, file$3, 611, 6, 16876);
     			set_style(span0, "pointer-events", "none");
-    			add_location(span0, file$3, 603, 8, 17213);
-    			attr_dev(div1, "class", "legendtitle svelte-1vzb36m");
-    			add_location(div1, file$3, 607, 10, 17376);
+    			add_location(span0, file$3, 616, 8, 17231);
+    			attr_dev(div1, "class", "legendtitle svelte-17tkxes");
+    			add_location(div1, file$3, 620, 10, 17394);
     			set_style(span1, "font-size", "12px");
     			set_style(span1, "padding-right", "3px");
     			set_style(span1, "color", "#CCC");
-    			add_location(span1, file$3, 609, 37, 17518);
-    			add_location(i0, file$3, 609, 106, 17587);
-    			attr_dev(div2, "class", "legendtextnum svelte-1vzb36m");
-    			add_location(div2, file$3, 609, 10, 17491);
+    			add_location(span1, file$3, 622, 37, 17536);
+    			add_location(i0, file$3, 622, 106, 17605);
+    			attr_dev(div2, "class", "legendtextnum svelte-17tkxes");
+    			add_location(div2, file$3, 622, 10, 17509);
     			set_style(span2, "font-size", "12px");
     			set_style(span2, "padding-right", "2px");
     			set_style(span2, "color", "#CCC");
-    			add_location(span2, file$3, 611, 37, 17762);
-    			add_location(i1, file$3, 611, 106, 17831);
-    			attr_dev(div3, "class", "legendtextnum svelte-1vzb36m");
-    			add_location(div3, file$3, 611, 10, 17735);
+    			add_location(span2, file$3, 624, 37, 17779);
+    			add_location(i1, file$3, 624, 106, 17848);
+    			attr_dev(div3, "class", "legendtextnum svelte-17tkxes");
+    			add_location(div3, file$3, 624, 10, 17752);
     			set_style(div4, "padding-top", "5px");
     			set_style(div4, "padding-bottom", "1px");
-    			add_location(div4, file$3, 608, 10, 17429);
-    			attr_dev(div5, "class", "legend svelte-1vzb36m");
+    			add_location(div4, file$3, 621, 10, 17447);
+    			attr_dev(div5, "class", "legend svelte-17tkxes");
     			set_style(div5, "position", "absolute");
-    			add_location(div5, file$3, 606, 8, 17318);
-    			attr_dev(div6, "class", "legendtext svelte-1vzb36m");
+    			add_location(div5, file$3, 619, 8, 17336);
+    			attr_dev(div6, "class", "legendtext svelte-17tkxes");
     			set_style(div6, "text-align", "right");
     			set_style(div6, "width", "105px");
     			set_style(div6, "left", "-111px");
     			set_style(div6, "top", "4px");
     			set_style(div6, "position", "relative");
-    			add_location(div6, file$3, 615, 10, 17974);
+    			add_location(div6, file$3, 628, 10, 17991);
     			set_style(div7, "position", "absolute");
     			set_style(div7, "left", "0px");
     			set_style(div7, "top", "0px");
     			set_style(div7, "width", "180px");
     			set_style(div7, "height", "100px");
-    			add_location(div7, file$3, 601, 6, 17124);
-    			attr_dev(div8, "class", "legendtitle svelte-1vzb36m");
-    			add_location(div8, file$3, 626, 10, 18428);
+    			add_location(div7, file$3, 614, 6, 17142);
+    			attr_dev(div8, "class", "legendtitle svelte-17tkxes");
+    			add_location(div8, file$3, 639, 10, 18439);
     			set_style(span3, "font-size", "12px");
     			set_style(span3, "padding-right", "3px");
     			set_style(span3, "color", "#CCC");
-    			add_location(span3, file$3, 629, 37, 18567);
-    			add_location(i2, file$3, 629, 106, 18636);
-    			attr_dev(div9, "class", "legendtextnum svelte-1vzb36m");
-    			add_location(div9, file$3, 629, 10, 18540);
+    			add_location(span3, file$3, 642, 37, 18578);
+    			add_location(i2, file$3, 642, 106, 18647);
+    			attr_dev(div9, "class", "legendtextnum svelte-17tkxes");
+    			add_location(div9, file$3, 642, 10, 18551);
     			set_style(span4, "font-size", "12px");
     			set_style(span4, "padding-right", "2px");
     			set_style(span4, "color", "#CCC");
-    			add_location(span4, file$3, 631, 37, 18807);
-    			add_location(i3, file$3, 631, 106, 18876);
-    			attr_dev(div10, "class", "legendtextnum svelte-1vzb36m");
-    			add_location(div10, file$3, 631, 10, 18780);
+    			add_location(span4, file$3, 644, 37, 18817);
+    			add_location(i3, file$3, 644, 106, 18886);
+    			attr_dev(div10, "class", "legendtextnum svelte-17tkxes");
+    			add_location(div10, file$3, 644, 10, 18790);
     			set_style(div11, "padding-top", "5px");
     			set_style(div11, "padding-bottom", "1px");
-    			add_location(div11, file$3, 628, 10, 18478);
-    			attr_dev(div12, "class", "legend svelte-1vzb36m");
+    			add_location(div11, file$3, 641, 10, 18489);
+    			attr_dev(div12, "class", "legend svelte-17tkxes");
     			set_style(div12, "position", "absolute");
-    			add_location(div12, file$3, 625, 8, 18370);
-    			attr_dev(div13, "class", "legendtext svelte-1vzb36m");
+    			add_location(div12, file$3, 638, 8, 18381);
+    			attr_dev(div13, "class", "legendtext svelte-17tkxes");
     			set_style(div13, "text-align", "right");
     			set_style(div13, "width", "105px");
     			set_style(div13, "left", "-111px");
     			set_style(div13, "top", "4px");
     			set_style(div13, "position", "relative");
-    			add_location(div13, file$3, 635, 8, 19018);
+    			add_location(div13, file$3, 648, 8, 19028);
     			set_style(div14, "position", "absolute");
     			set_style(div14, "left", "0px");
     			set_style(div14, "top", "" + legendheight*1 + "px");
     			set_style(div14, "width", "180px");
     			set_style(div14, "height", "100px");
-    			add_location(div14, file$3, 620, 6, 18164);
-    			attr_dev(div15, "class", "legendtitle svelte-1vzb36m");
-    			add_location(div15, file$3, 646, 10, 19472);
+    			add_location(div14, file$3, 633, 6, 18181);
+    			attr_dev(div15, "class", "legendtitle svelte-17tkxes");
+    			add_location(div15, file$3, 659, 10, 19479);
     			set_style(span5, "font-size", "12px");
     			set_style(span5, "padding-right", "3px");
     			set_style(span5, "color", "#CCC");
-    			add_location(span5, file$3, 648, 37, 19611);
-    			add_location(i4, file$3, 648, 106, 19680);
-    			attr_dev(div16, "class", "legendtextnum svelte-1vzb36m");
-    			add_location(div16, file$3, 648, 10, 19584);
+    			add_location(span5, file$3, 661, 37, 19618);
+    			add_location(i4, file$3, 661, 106, 19687);
+    			attr_dev(div16, "class", "legendtextnum svelte-17tkxes");
+    			add_location(div16, file$3, 661, 10, 19591);
     			set_style(span6, "font-size", "12px");
     			set_style(span6, "padding-right", "2px");
     			set_style(span6, "color", "#CCC");
-    			add_location(span6, file$3, 650, 37, 19851);
-    			add_location(i5, file$3, 650, 106, 19920);
-    			attr_dev(div17, "class", "legendtextnum svelte-1vzb36m");
-    			add_location(div17, file$3, 650, 10, 19824);
+    			add_location(span6, file$3, 663, 37, 19857);
+    			add_location(i5, file$3, 663, 106, 19926);
+    			attr_dev(div17, "class", "legendtextnum svelte-17tkxes");
+    			add_location(div17, file$3, 663, 10, 19830);
     			set_style(div18, "padding-top", "5px");
     			set_style(div18, "padding-bottom", "1px");
-    			add_location(div18, file$3, 647, 10, 19522);
-    			attr_dev(div19, "class", "legend svelte-1vzb36m");
+    			add_location(div18, file$3, 660, 10, 19529);
+    			attr_dev(div19, "class", "legend svelte-17tkxes");
     			set_style(div19, "position", "absolute");
-    			add_location(div19, file$3, 645, 8, 19414);
-    			add_location(i6, file$3, 654, 135, 20189);
-    			attr_dev(div20, "class", "legendtext svelte-1vzb36m");
+    			add_location(div19, file$3, 658, 8, 19421);
+    			add_location(i6, file$3, 667, 135, 20195);
+    			attr_dev(div20, "class", "legendtext svelte-17tkxes");
     			set_style(div20, "text-align", "right");
     			set_style(div20, "width", "105px");
     			set_style(div20, "left", "-111px");
     			set_style(div20, "top", "4px");
     			set_style(div20, "position", "relative");
-    			add_location(div20, file$3, 654, 8, 20062);
+    			add_location(div20, file$3, 667, 8, 20068);
     			set_style(div21, "position", "absolute");
     			set_style(div21, "left", "0px");
     			set_style(div21, "top", "" + legendheight*2 + "px");
     			set_style(div21, "width", "180px");
     			set_style(div21, "height", "100px");
-    			add_location(div21, file$3, 640, 6, 19211);
-    			attr_dev(div22, "class", "legendtitle svelte-1vzb36m");
-    			add_location(div22, file$3, 666, 10, 20591);
+    			add_location(div21, file$3, 653, 6, 19221);
+    			attr_dev(div22, "class", "legendtitle svelte-17tkxes");
+    			add_location(div22, file$3, 679, 10, 20597);
     			set_style(span7, "font-size", "12px");
     			set_style(span7, "padding-right", "3px");
     			set_style(span7, "color", "#CCC");
-    			add_location(span7, file$3, 668, 37, 20730);
-    			add_location(i7, file$3, 668, 106, 20799);
-    			attr_dev(div23, "class", "legendtextnum svelte-1vzb36m");
-    			add_location(div23, file$3, 668, 10, 20703);
+    			add_location(span7, file$3, 681, 37, 20736);
+    			add_location(i7, file$3, 681, 106, 20805);
+    			attr_dev(div23, "class", "legendtextnum svelte-17tkxes");
+    			add_location(div23, file$3, 681, 10, 20709);
     			set_style(span8, "font-size", "12px");
     			set_style(span8, "padding-right", "2px");
     			set_style(span8, "color", "#CCC");
-    			add_location(span8, file$3, 670, 37, 21062);
-    			add_location(i8, file$3, 670, 106, 21131);
-    			attr_dev(div24, "class", "legendtextnum svelte-1vzb36m");
-    			add_location(div24, file$3, 670, 10, 21035);
+    			add_location(span8, file$3, 683, 37, 21067);
+    			add_location(i8, file$3, 683, 106, 21136);
+    			attr_dev(div24, "class", "legendtextnum svelte-17tkxes");
+    			add_location(div24, file$3, 683, 10, 21040);
     			set_style(div25, "padding-top", "10px");
     			set_style(div25, "padding-bottom", "1px");
-    			add_location(div25, file$3, 667, 10, 20640);
-    			attr_dev(div26, "class", "legend svelte-1vzb36m");
+    			add_location(div25, file$3, 680, 10, 20646);
+    			attr_dev(div26, "class", "legend svelte-17tkxes");
     			set_style(div26, "position", "absolute");
-    			add_location(div26, file$3, 665, 8, 20533);
-    			attr_dev(div27, "class", "legendtext svelte-1vzb36m");
+    			add_location(div26, file$3, 678, 8, 20539);
+    			attr_dev(div27, "class", "legendtext svelte-17tkxes");
     			set_style(div27, "text-align", "right");
     			set_style(div27, "width", "105px");
     			set_style(div27, "left", "-111px");
     			set_style(div27, "top", "4x");
     			set_style(div27, "position", "relative");
-    			add_location(div27, file$3, 674, 8, 21348);
+    			add_location(div27, file$3, 687, 8, 21353);
     			set_style(div28, "position", "absolute");
     			set_style(div28, "left", "0px");
     			set_style(div28, "top", "" + legendheight*3 + "px");
     			set_style(div28, "width", "180px");
     			set_style(div28, "height", "100px");
-    			add_location(div28, file$3, 660, 6, 20269);
-    			attr_dev(div29, "class", "legendtitle svelte-1vzb36m");
-    			add_location(div29, file$3, 683, 10, 21857);
+    			add_location(div28, file$3, 673, 6, 20275);
+    			attr_dev(div29, "class", "legendtitle svelte-17tkxes");
+    			add_location(div29, file$3, 696, 10, 21862);
     			set_style(span9, "font-size", "12px");
     			set_style(span9, "padding-right", "3px");
     			set_style(span9, "color", "#CCC");
-    			add_location(span9, file$3, 686, 37, 21998);
-    			add_location(i9, file$3, 686, 106, 22067);
-    			attr_dev(div30, "class", "legendtextnum svelte-1vzb36m");
-    			add_location(div30, file$3, 686, 10, 21971);
+    			add_location(span9, file$3, 699, 37, 22003);
+    			add_location(i9, file$3, 699, 106, 22072);
+    			attr_dev(div30, "class", "legendtextnum svelte-17tkxes");
+    			add_location(div30, file$3, 699, 10, 21976);
     			set_style(div31, "padding-top", "3px");
     			set_style(div31, "padding-bottom", "1px");
-    			add_location(div31, file$3, 685, 10, 21909);
-    			attr_dev(div32, "class", "legend svelte-1vzb36m");
+    			add_location(div31, file$3, 698, 10, 21914);
+    			attr_dev(div32, "class", "legend svelte-17tkxes");
     			set_style(div32, "position", "absolute");
-    			add_location(div32, file$3, 682, 8, 21799);
-    			attr_dev(div33, "class", "legendtext svelte-1vzb36m");
+    			add_location(div32, file$3, 695, 8, 21804);
+    			attr_dev(div33, "class", "legendtext svelte-17tkxes");
     			set_style(div33, "text-align", "right");
     			set_style(div33, "width", "105px");
     			set_style(div33, "left", "-111px");
     			set_style(div33, "top", "8px");
     			set_style(div33, "position", "relative");
-    			add_location(div33, file$3, 690, 8, 22282);
+    			add_location(div33, file$3, 703, 8, 22286);
     			set_style(div34, "position", "absolute");
     			set_style(div34, "left", "0px");
     			set_style(div34, "top", "" + (legendheight*4+14-3) + "px");
     			set_style(div34, "width", "180px");
     			set_style(div34, "height", "100px");
-    			add_location(div34, file$3, 679, 6, 21567);
-    			attr_dev(div35, "class", "legendtitle svelte-1vzb36m");
-    			add_location(div35, file$3, 699, 10, 22748);
+    			add_location(div34, file$3, 692, 6, 21572);
+    			attr_dev(div35, "class", "legendtitle svelte-17tkxes");
+    			add_location(div35, file$3, 712, 10, 22752);
     			set_style(span10, "font-size", "12px");
     			set_style(span10, "padding-right", "3px");
     			set_style(span10, "color", "#CCC");
-    			add_location(span10, file$3, 701, 37, 22891);
-    			add_location(i10, file$3, 701, 106, 22960);
-    			attr_dev(div36, "class", "legendtextnum svelte-1vzb36m");
-    			add_location(div36, file$3, 701, 10, 22864);
+    			add_location(span10, file$3, 714, 37, 22895);
+    			add_location(i10, file$3, 714, 106, 22964);
+    			attr_dev(div36, "class", "legendtextnum svelte-17tkxes");
+    			add_location(div36, file$3, 714, 10, 22868);
     			set_style(div37, "padding-top", "3px");
     			set_style(div37, "padding-bottom", "1px");
-    			add_location(div37, file$3, 700, 10, 22802);
+    			add_location(div37, file$3, 713, 10, 22806);
     			set_style(span11, "font-size", "12px");
     			set_style(span11, "padding-right", "2px");
     			set_style(span11, "color", "#CCC");
-    			add_location(span11, file$3, 704, 37, 23189);
-    			add_location(i11, file$3, 704, 106, 23258);
-    			attr_dev(div38, "class", "legendtextnum svelte-1vzb36m");
-    			add_location(div38, file$3, 704, 10, 23162);
-    			attr_dev(div39, "class", "legend svelte-1vzb36m");
+    			add_location(span11, file$3, 717, 37, 23192);
+    			add_location(i11, file$3, 717, 106, 23261);
+    			attr_dev(div38, "class", "legendtextnum svelte-17tkxes");
+    			add_location(div38, file$3, 717, 10, 23165);
+    			attr_dev(div39, "class", "legend svelte-17tkxes");
     			set_style(div39, "position", "absolute");
-    			add_location(div39, file$3, 698, 8, 22690);
-    			attr_dev(div40, "class", "legendtext svelte-1vzb36m");
+    			add_location(div39, file$3, 711, 8, 22694);
+    			attr_dev(div40, "class", "legendtext svelte-17tkxes");
     			set_style(div40, "text-align", "right");
     			set_style(div40, "width", "105px");
     			set_style(div40, "left", "-111px");
     			set_style(div40, "top", "10px");
     			set_style(div40, "position", "relative");
-    			add_location(div40, file$3, 707, 8, 23403);
+    			add_location(div40, file$3, 720, 8, 23406);
     			set_style(div41, "position", "absolute");
     			set_style(div41, "left", "0px");
     			set_style(div41, "top", "" + (legendheight*4+57) + "px");
     			set_style(div41, "width", "180px");
     			set_style(div41, "height", "100px");
-    			add_location(div41, file$3, 695, 6, 22460);
-    			attr_dev(div42, "class", "legendtitle svelte-1vzb36m");
-    			add_location(div42, file$3, 717, 10, 23857);
+    			add_location(div41, file$3, 708, 6, 22464);
+    			attr_dev(div42, "class", "legendtitle svelte-17tkxes");
+    			add_location(div42, file$3, 730, 10, 23860);
     			set_style(span12, "font-size", "12px");
     			set_style(span12, "padding-right", "3px");
     			set_style(span12, "color", "#CCC");
-    			add_location(span12, file$3, 719, 37, 24008);
-    			add_location(i12, file$3, 719, 106, 24077);
-    			attr_dev(div43, "class", "legendtextnum svelte-1vzb36m");
-    			add_location(div43, file$3, 719, 10, 23981);
+    			add_location(span12, file$3, 732, 37, 24001);
+    			add_location(i12, file$3, 732, 106, 24070);
+    			attr_dev(div43, "class", "legendtextnum svelte-17tkxes");
+    			add_location(div43, file$3, 732, 10, 23974);
     			set_style(span13, "font-size", "12px");
     			set_style(span13, "padding-right", "2px");
     			set_style(span13, "color", "#CCC");
-    			add_location(span13, file$3, 721, 37, 24248);
-    			add_location(i13, file$3, 721, 106, 24317);
-    			attr_dev(div44, "class", "legendtextnum svelte-1vzb36m");
-    			add_location(div44, file$3, 721, 10, 24221);
+    			add_location(span13, file$3, 734, 37, 24240);
+    			add_location(i13, file$3, 734, 106, 24309);
+    			attr_dev(div44, "class", "legendtextnum svelte-17tkxes");
+    			add_location(div44, file$3, 734, 10, 24213);
     			set_style(div45, "padding-top", "3px");
     			set_style(div45, "padding-bottom", "1px");
-    			add_location(div45, file$3, 718, 10, 23909);
-    			attr_dev(div46, "class", "legend svelte-1vzb36m");
+    			add_location(div45, file$3, 731, 10, 23912);
+    			attr_dev(div46, "class", "legend svelte-17tkxes");
     			set_style(div46, "position", "absolute");
-    			add_location(div46, file$3, 716, 8, 23799);
-    			attr_dev(div47, "class", "legendtext svelte-1vzb36m");
+    			add_location(div46, file$3, 729, 8, 23802);
+    			attr_dev(div47, "class", "legendtext svelte-17tkxes");
     			set_style(div47, "text-align", "right");
     			set_style(div47, "width", "105px");
     			set_style(div47, "left", "-111px");
     			set_style(div47, "top", "10px");
     			set_style(div47, "position", "relative");
-    			add_location(div47, file$3, 725, 8, 24459);
+    			add_location(div47, file$3, 738, 8, 24451);
     			set_style(div48, "position", "absolute");
     			set_style(div48, "left", "0px");
     			set_style(div48, "top", "" + (legendheight*4 + 120+2) + "px");
     			set_style(div48, "width", "180px");
     			set_style(div48, "height", "100px");
-    			add_location(div48, file$3, 711, 6, 23562);
+    			add_location(div48, file$3, 724, 6, 23565);
     			set_style(div49, "position", "relative");
     			set_style(div49, "top", "48px");
     			set_style(div49, "right", "-115px");
-    			add_location(div49, file$3, 597, 4, 16796);
+    			add_location(div49, file$3, 610, 4, 16814);
     			set_style(div50, "flex", "0 0 270px");
     			set_style(div50, "width", "270px");
-    			add_location(div50, file$3, 596, 2, 16748);
+    			add_location(div50, file$3, 609, 2, 16766);
     			set_style(div51, "position", "relative");
     			set_style(div51, "top", "60px");
     			set_style(div51, "left", "10px");
-    			add_location(div51, file$3, 732, 4, 24708);
+    			add_location(div51, file$3, 745, 4, 24700);
     			attr_dev(div52, "id", "xAxisDrag");
     			set_style(div52, "pointer-events", "all");
     			set_style(div52, "position", "absolute");
@@ -23792,7 +23791,7 @@
     			set_style(div52, "opacity", "0");
     			set_style(div52, "height", "25px");
     			set_style(div52, "cursor", "col-resize");
-    			add_location(div52, file$3, 749, 6, 25232);
+    			add_location(div52, file$3, 762, 6, 25219);
     			attr_dev(div53, "id", "yAxisDrag");
     			set_style(div53, "pointer-events", "all");
     			set_style(div53, "position", "absolute");
@@ -23803,34 +23802,34 @@
     			set_style(div53, "opacity", "0");
     			set_style(div53, "height", "425px");
     			set_style(div53, "cursor", "row-resize");
-    			add_location(div53, file$3, 761, 6, 25589);
+    			add_location(div53, file$3, 774, 6, 25576);
     			set_style(span14, "font-size", "13px");
-    			add_location(span14, file$3, 788, 8, 26757);
+    			add_location(span14, file$3, 801, 8, 26744);
     			set_style(div54, "position", "absolute");
     			set_style(div54, "opacity", "0.5");
     			set_style(div54, "top", "-5px");
     			set_style(div54, "left", "10px");
     			set_style(div54, "width", "120px");
-    			add_location(div54, file$3, 787, 8, 26668);
-    			attr_dev(div55, "class", "paneltitle svelte-1vzb36m");
+    			add_location(div54, file$3, 800, 8, 26655);
+    			attr_dev(div55, "class", "paneltitle svelte-17tkxes");
     			set_style(div55, "top", "9px");
     			set_style(div55, "position", "relative");
     			set_style(div55, "text-align", "right");
-    			add_location(div55, file$3, 798, 10, 27397);
-    			add_location(span15, file$3, 799, 10, 27544);
+    			add_location(div55, file$3, 811, 10, 27377);
+    			add_location(span15, file$3, 812, 10, 27524);
     			set_style(div56, "top", "9px");
     			set_style(div56, "position", "relative");
     			set_style(div56, "text-align", "right");
-    			add_location(div56, file$3, 799, 23, 27557);
+    			add_location(div56, file$3, 812, 23, 27537);
     			attr_dev(path, "d", "M2 11h16v2H2zm0-4h16v2H2zm8 11l3-3H7l3 3zm0-16L7 5h6l-3-3z");
-    			add_location(path, file$3, 805, 18, 27916);
+    			add_location(path, file$3, 818, 18, 27896);
     			attr_dev(g0, "transform", "translate(0,-20)");
-    			add_location(g0, file$3, 804, 16, 27865);
+    			add_location(g0, file$3, 817, 16, 27845);
     			attr_dev(g1, "transform", "rotate(90)");
-    			add_location(g1, file$3, 803, 14, 27822);
+    			add_location(g1, file$3, 816, 14, 27802);
     			attr_dev(svg, "width", "20");
     			attr_dev(svg, "height", "20");
-    			add_location(svg, file$3, 802, 12, 27779);
+    			add_location(svg, file$3, 815, 12, 27759);
     			set_style(div57, "top", "43px");
     			set_style(div57, "left", "40px");
     			set_style(div57, "position", "absolute");
@@ -23838,9 +23837,9 @@
     			set_style(div57, "width", "20px");
     			set_style(div57, "height", "20px");
     			set_style(div57, "opacity", "0.3");
-    			add_location(div57, file$3, 801, 10, 27654);
+    			add_location(div57, file$3, 814, 10, 27634);
     			attr_dev(div58, "id", "interventionDrag");
-    			attr_dev(div58, "class", "legendtext svelte-1vzb36m");
+    			attr_dev(div58, "class", "legendtext svelte-17tkxes");
     			set_style(div58, "flex", "0 0 160px");
     			set_style(div58, "width", "120px");
     			set_style(div58, "position", "relative");
@@ -23850,7 +23849,7 @@
     			set_style(div58, "left", "-125px");
     			set_style(div58, "pointer-events", "all");
     			set_style(div58, "cursor", "col-resize");
-    			add_location(div58, file$3, 797, 8, 27182);
+    			add_location(div58, file$3, 810, 8, 27162);
     			set_style(div59, "width", "150px");
     			set_style(div59, "position", "relative");
     			set_style(div59, "top", "-85px");
@@ -23860,7 +23859,7 @@
     			set_style(div59, "cursor", "col-resize");
     			set_style(div59, "background-color", "white");
     			set_style(div59, "position", "absolute");
-    			add_location(div59, file$3, 813, 8, 28091);
+    			add_location(div59, file$3, 826, 8, 28069);
     			attr_dev(div60, "id", "dottedline");
     			set_style(div60, "pointer-events", "all");
     			set_style(div60, "position", "absolute");
@@ -23873,7 +23872,7 @@
     			set_style(div60, "pointer-events", "all");
     			set_style(div60, "cursor", "col-resize");
     			set_style(div60, "height", "" + (height$1+19) + "px");
-    			add_location(div60, file$3, 775, 8, 26117);
+    			add_location(div60, file$3, 788, 8, 26104);
     			set_style(div61, "position", "absolute");
     			set_style(div61, "width", "" + (width$1+15) + "px");
     			set_style(div61, "height", "" + height$1 + "px");
@@ -23881,25 +23880,25 @@
     			set_style(div61, "top", "100px");
     			set_style(div61, "left", "10px");
     			set_style(div61, "pointer-events", "none");
-    			add_location(div61, file$3, 774, 6, 25972);
-    			add_location(br1, file$3, 836, 64, 29304);
-    			attr_dev(div62, "class", "paneldesc svelte-1vzb36m");
-    			add_location(div62, file$3, 836, 14, 29254);
-    			attr_dev(div63, "class", "paneltext svelte-1vzb36m");
+    			add_location(div61, file$3, 787, 6, 25959);
+    			add_location(br1, file$3, 849, 64, 29276);
+    			attr_dev(div62, "class", "paneldesc svelte-17tkxes");
+    			add_location(div62, file$3, 849, 14, 29226);
+    			attr_dev(div63, "class", "paneltext svelte-17tkxes");
     			set_style(div63, "height", "20px");
     			set_style(div63, "text-align", "right");
-    			add_location(div63, file$3, 835, 14, 29176);
-    			attr_dev(div64, "class", "slidertext svelte-1vzb36m");
-    			add_location(div64, file$3, 839, 14, 29398);
-    			attr_dev(input0, "class", "range svelte-1vzb36m");
+    			add_location(div63, file$3, 848, 14, 29148);
+    			attr_dev(div64, "class", "slidertext svelte-17tkxes");
+    			add_location(div64, file$3, 852, 14, 29370);
+    			attr_dev(input0, "class", "range svelte-17tkxes");
     			attr_dev(input0, "type", "range");
     			attr_dev(input0, "min", "0");
     			attr_dev(input0, "max", "1");
     			attr_dev(input0, "step", "0.01");
-    			add_location(input0, file$3, 840, 14, 29499);
+    			add_location(input0, file$3, 853, 14, 29471);
     			set_style(div65, "pointer-events", "all");
-    			add_location(div65, file$3, 838, 14, 29350);
-    			attr_dev(div66, "class", "caption svelte-1vzb36m");
+    			add_location(div65, file$3, 851, 14, 29322);
+    			attr_dev(div66, "class", "caption svelte-17tkxes");
     			set_style(div66, "pointer-events", "none");
     			set_style(div66, "position", "absolute");
     			set_style(div66, "left", "0");
@@ -23907,13 +23906,13 @@
     			set_style(div66, "width", "150px");
     			set_style(div66, "border-left", "2px solid #777");
     			set_style(div66, "padding", "5px 7px 7px 7px");
-    			add_location(div66, file$3, 834, 14, 28997);
+    			add_location(div66, file$3, 847, 14, 28975);
     			set_style(div67, "flex", "0 0 160px");
     			set_style(div67, "width", "200px");
     			set_style(div67, "position", "relative");
     			set_style(div67, "top", "-125px");
     			set_style(div67, "left", "1px");
-    			add_location(div67, file$3, 833, 12, 28897);
+    			add_location(div67, file$3, 846, 12, 28875);
     			set_style(div68, "position", "absolute");
     			set_style(div68, "top", "-38px");
     			set_style(div68, "left", "" + ctx.xScaleTime(ctx.InterventionTime) + "px");
@@ -23923,7 +23922,7 @@
     			set_style(div68, "border-right", "1px dashed black");
     			set_style(div68, "cursor", "col-resize");
     			set_style(div68, "height", "" + height$1 + "px");
-    			add_location(div68, file$3, 823, 8, 28496);
+    			add_location(div68, file$3, 836, 8, 28474);
     			set_style(div69, "position", "absolute");
     			set_style(div69, "width", "" + (width$1+15) + "px");
     			set_style(div69, "height", "" + height$1 + "px");
@@ -23931,7 +23930,7 @@
     			set_style(div69, "top", "120px");
     			set_style(div69, "left", "10px");
     			set_style(div69, "pointer-events", "none");
-    			add_location(div69, file$3, 822, 6, 28351);
+    			add_location(div69, file$3, 835, 6, 28329);
     			set_style(div70, "pointer-events", "none");
     			set_style(div70, "position", "absolute");
     			set_style(div70, "top", "" + (height$1+84) + "px");
@@ -23940,510 +23939,503 @@
     			set_style(div70, "opacity", "1.0");
     			set_style(div70, "height", "25px");
     			set_style(div70, "cursor", "col-resize");
-    			add_location(div70, file$3, 895, 6, 32144);
+    			add_location(div70, file$3, 908, 6, 32108);
     			set_style(div71, "position", "relative");
     			set_style(div71, "top", "4px");
     			set_style(div71, "left", "20px");
-    			add_location(div71, file$3, 913, 51, 33163);
-    			attr_dev(div72, "class", "tick svelte-1vzb36m");
+    			add_location(div71, file$3, 926, 51, 33123);
+    			attr_dev(div72, "class", "tick svelte-17tkxes");
     			set_style(div72, "color", "#AAA");
     			set_style(div72, "position", "absolute");
     			set_style(div72, "pointer-events", "all");
     			set_style(div72, "left", "10px");
     			set_style(div72, "top", "10px");
-    			add_location(div72, file$3, 912, 6, 33012);
+    			add_location(div72, file$3, 925, 6, 32972);
     			set_style(div73, "opacity", (ctx.xScaleTime(ctx.InterventionTime) >= 192? 1.0 : 0.2));
-    			add_location(div73, file$3, 911, 4, 32935);
+    			add_location(div73, file$3, 924, 4, 32895);
     			set_style(div74, "flex", "0 0 890px");
     			set_style(div74, "width", "890px");
     			set_style(div74, "height", "" + (height$1+128) + "px");
     			set_style(div74, "position", "relative");
-    			add_location(div74, file$3, 730, 2, 24616);
-    			attr_dev(div75, "class", "chart svelte-1vzb36m");
+    			add_location(div74, file$3, 743, 2, 24608);
+    			attr_dev(div75, "class", "chart svelte-17tkxes");
     			set_style(div75, "display", "flex");
     			set_style(div75, "max-width", "1120px");
-    			add_location(div75, file$3, 594, 0, 16684);
+    			add_location(div75, file$3, 607, 0, 16702);
     			set_style(div76, "margin", "0px 0px 5px 4px");
-    			attr_dev(div76, "class", "minorTitleColumn svelte-1vzb36m");
-    			add_location(div76, file$3, 924, 4, 33339);
+    			attr_dev(div76, "class", "minorTitleColumn svelte-17tkxes");
+    			add_location(div76, file$3, 937, 4, 33299);
     			set_style(div77, "flex", "0 0 20");
     			set_style(div77, "width", "20px");
-    			add_location(div77, file$3, 925, 4, 33433);
+    			add_location(div77, file$3, 938, 4, 33393);
     			set_style(div78, "margin", "0px 4px 5px 0px");
-    			attr_dev(div78, "class", "minorTitleColumn svelte-1vzb36m");
-    			add_location(div78, file$3, 926, 4, 33482);
-    			attr_dev(div79, "class", "minorTitle svelte-1vzb36m");
-    			add_location(div79, file$3, 923, 2, 33310);
-    			attr_dev(div80, "class", "paneltitle svelte-1vzb36m");
-    			add_location(div80, file$3, 931, 6, 33631);
-    			add_location(br2, file$3, 932, 68, 33747);
-    			attr_dev(div81, "class", "paneldesc svelte-1vzb36m");
+    			attr_dev(div78, "class", "minorTitleColumn svelte-17tkxes");
+    			add_location(div78, file$3, 939, 4, 33442);
+    			attr_dev(div79, "class", "minorTitle svelte-17tkxes");
+    			add_location(div79, file$3, 936, 2, 33270);
+    			attr_dev(div80, "class", "paneltitle svelte-17tkxes");
+    			add_location(div80, file$3, 944, 6, 33591);
+    			add_location(br2, file$3, 945, 68, 33707);
+    			attr_dev(div81, "class", "paneldesc svelte-17tkxes");
     			set_style(div81, "height", "30px");
-    			add_location(div81, file$3, 932, 6, 33685);
-    			attr_dev(div82, "class", "slidertext svelte-1vzb36m");
-    			add_location(div82, file$3, 933, 6, 33764);
-    			attr_dev(input1, "class", "range svelte-1vzb36m");
+    			add_location(div81, file$3, 945, 6, 33645);
+    			attr_dev(div82, "class", "slidertext svelte-17tkxes");
+    			add_location(div82, file$3, 946, 6, 33724);
+    			attr_dev(input1, "class", "range svelte-17tkxes");
     			set_style(input1, "margin-bottom", "8px");
     			attr_dev(input1, "type", "range");
     			attr_dev(input1, "min", 5);
     			attr_dev(input1, "max", "25");
     			attr_dev(input1, "step", "0.01");
-    			add_location(input1, file$3, 934, 6, 33829);
-    			add_location(br3, file$3, 935, 125, 34056);
-    			attr_dev(div83, "class", "paneldesc svelte-1vzb36m");
+    			add_location(input1, file$3, 947, 6, 33789);
+    			add_location(br3, file$3, 948, 125, 34016);
+    			attr_dev(div83, "class", "paneldesc svelte-17tkxes");
     			set_style(div83, "height", "29px");
     			set_style(div83, "border-top", "1px solid #EEE");
     			set_style(div83, "padding-top", "10px");
-    			add_location(div83, file$3, 935, 6, 33937);
-    			attr_dev(div84, "class", "slidertext svelte-1vzb36m");
-    			add_location(div84, file$3, 936, 6, 34073);
-    			attr_dev(input2, "class", "range svelte-1vzb36m");
+    			add_location(div83, file$3, 948, 6, 33897);
+    			attr_dev(div84, "class", "slidertext svelte-17tkxes");
+    			add_location(div84, file$3, 949, 6, 34033);
+    			attr_dev(input2, "class", "range svelte-17tkxes");
     			attr_dev(input2, "type", "range");
     			attr_dev(input2, "min", 1);
     			attr_dev(input2, "max", "10000");
     			attr_dev(input2, "step", "1");
-    			add_location(input2, file$3, 937, 6, 34114);
-    			attr_dev(div85, "class", "column svelte-1vzb36m");
-    			add_location(div85, file$3, 930, 4, 33604);
+    			add_location(input2, file$3, 950, 6, 34074);
+    			attr_dev(div85, "class", "column svelte-17tkxes");
+    			add_location(div85, file$3, 943, 4, 33564);
     			html_tag = new HtmlTag(raw1_value, null);
-    			attr_dev(div86, "class", "paneltitle svelte-1vzb36m");
-    			add_location(div86, file$3, 942, 6, 34261);
-    			add_location(br4, file$3, 943, 126, 34482);
-    			attr_dev(div87, "class", "paneldesc svelte-1vzb36m");
-    			add_location(div87, file$3, 943, 6, 34362);
-    			attr_dev(div88, "class", "paneltext svelte-1vzb36m");
-    			add_location(div88, file$3, 941, 6, 34231);
-    			attr_dev(div89, "class", "slidertext svelte-1vzb36m");
-    			add_location(div89, file$3, 945, 6, 34512);
-    			attr_dev(input3, "class", "range svelte-1vzb36m");
+    			attr_dev(div86, "class", "paneltitle svelte-17tkxes");
+    			add_location(div86, file$3, 955, 6, 34221);
+    			add_location(br4, file$3, 956, 126, 34442);
+    			attr_dev(div87, "class", "paneldesc svelte-17tkxes");
+    			add_location(div87, file$3, 956, 6, 34322);
+    			attr_dev(div88, "class", "paneltext svelte-17tkxes");
+    			add_location(div88, file$3, 954, 6, 34191);
+    			attr_dev(div89, "class", "slidertext svelte-17tkxes");
+    			add_location(div89, file$3, 958, 6, 34472);
+    			attr_dev(input3, "class", "range svelte-17tkxes");
     			attr_dev(input3, "type", "range");
     			attr_dev(input3, "min", "0.01");
     			attr_dev(input3, "max", "10");
     			attr_dev(input3, "step", "0.01");
-    			add_location(input3, file$3, 946, 6, 34553);
-    			attr_dev(div90, "class", "column svelte-1vzb36m");
-    			add_location(div90, file$3, 940, 4, 34204);
-    			attr_dev(div91, "class", "paneltitle svelte-1vzb36m");
-    			add_location(div91, file$3, 950, 6, 34672);
+    			add_location(input3, file$3, 959, 6, 34513);
+    			attr_dev(div90, "class", "column svelte-17tkxes");
+    			add_location(div90, file$3, 953, 4, 34164);
+    			attr_dev(div91, "class", "paneltitle svelte-17tkxes");
+    			add_location(div91, file$3, 963, 6, 34631);
     			html_tag_1 = new HtmlTag(raw2_value, t178);
-    			add_location(br5, file$3, 951, 117, 34838);
-    			attr_dev(div92, "class", "paneldesc svelte-1vzb36m");
+    			add_location(br5, file$3, 964, 117, 34797);
+    			attr_dev(div92, "class", "paneldesc svelte-17tkxes");
     			set_style(div92, "height", "30px");
-    			add_location(div92, file$3, 951, 6, 34727);
-    			attr_dev(div93, "class", "slidertext svelte-1vzb36m");
-    			add_location(div93, file$3, 952, 6, 34855);
-    			attr_dev(input4, "class", "range svelte-1vzb36m");
+    			add_location(div92, file$3, 964, 6, 34686);
+    			attr_dev(div93, "class", "slidertext svelte-17tkxes");
+    			add_location(div93, file$3, 965, 6, 34814);
+    			attr_dev(input4, "class", "range svelte-17tkxes");
     			set_style(input4, "margin-bottom", "8px");
     			attr_dev(input4, "type", "range");
     			attr_dev(input4, "min", 0.15);
     			attr_dev(input4, "max", "24");
     			attr_dev(input4, "step", "0.0001");
-    			add_location(input4, file$3, 953, 6, 34923);
+    			add_location(input4, file$3, 966, 6, 34883);
     			html_tag_2 = new HtmlTag(raw3_value, t185);
-    			add_location(br6, file$3, 954, 167, 35204);
-    			attr_dev(div94, "class", "paneldesc svelte-1vzb36m");
+    			add_location(br6, file$3, 967, 167, 35165);
+    			attr_dev(div94, "class", "paneldesc svelte-17tkxes");
     			set_style(div94, "height", "29px");
     			set_style(div94, "border-top", "1px solid #EEE");
     			set_style(div94, "padding-top", "10px");
-    			add_location(div94, file$3, 954, 6, 35043);
-    			attr_dev(div95, "class", "slidertext svelte-1vzb36m");
-    			add_location(div95, file$3, 955, 6, 35221);
-    			attr_dev(input5, "class", "range svelte-1vzb36m");
+    			add_location(div94, file$3, 967, 6, 35004);
+    			attr_dev(div95, "class", "slidertext svelte-17tkxes");
+    			add_location(div95, file$3, 968, 6, 35182);
+    			attr_dev(input5, "class", "range svelte-17tkxes");
     			attr_dev(input5, "type", "range");
     			attr_dev(input5, "min", 0);
     			attr_dev(input5, "max", "24");
     			attr_dev(input5, "step", "0.01");
-    			add_location(input5, file$3, 956, 6, 35277);
-    			attr_dev(div96, "class", "column svelte-1vzb36m");
-    			add_location(div96, file$3, 949, 4, 34645);
+    			add_location(input5, file$3, 969, 6, 35238);
+    			attr_dev(div96, "class", "column svelte-17tkxes");
+    			add_location(div96, file$3, 962, 4, 34604);
     			set_style(div97, "flex", "0 0 20");
     			set_style(div97, "width", "20px");
-    			add_location(div97, file$3, 959, 4, 35377);
-    			attr_dev(div98, "class", "paneltitle svelte-1vzb36m");
-    			add_location(div98, file$3, 962, 6, 35454);
-    			add_location(br7, file$3, 963, 68, 35573);
-    			attr_dev(div99, "class", "paneldesc svelte-1vzb36m");
+    			add_location(div97, file$3, 972, 4, 35338);
+    			attr_dev(div98, "class", "paneltitle svelte-17tkxes");
+    			add_location(div98, file$3, 975, 6, 35415);
+    			add_location(br7, file$3, 976, 68, 35534);
+    			attr_dev(div99, "class", "paneldesc svelte-17tkxes");
     			set_style(div99, "height", "30px");
-    			add_location(div99, file$3, 963, 6, 35511);
-    			attr_dev(div100, "class", "slidertext svelte-1vzb36m");
-    			add_location(div100, file$3, 964, 6, 35590);
-    			attr_dev(input6, "class", "range svelte-1vzb36m");
+    			add_location(div99, file$3, 976, 6, 35472);
+    			attr_dev(div100, "class", "slidertext svelte-17tkxes");
+    			add_location(div100, file$3, 977, 6, 35551);
+    			attr_dev(input6, "class", "range svelte-17tkxes");
     			set_style(input6, "margin-bottom", "8px");
     			attr_dev(input6, "type", "range");
     			attr_dev(input6, "min", 0);
     			attr_dev(input6, "max", "1");
     			attr_dev(input6, "step", "0.0001");
-    			add_location(input6, file$3, 965, 6, 35651);
-    			add_location(br8, file$3, 966, 133, 35887);
-    			attr_dev(div101, "class", "paneldesc svelte-1vzb36m");
+    			add_location(input6, file$3, 978, 6, 35612);
+    			add_location(br8, file$3, 979, 133, 35848);
+    			attr_dev(div101, "class", "paneldesc svelte-17tkxes");
     			set_style(div101, "height", "29px");
     			set_style(div101, "border-top", "1px solid #EEE");
     			set_style(div101, "padding-top", "10px");
-    			add_location(div101, file$3, 966, 6, 35760);
-    			attr_dev(div102, "class", "slidertext svelte-1vzb36m");
-    			add_location(div102, file$3, 967, 6, 35904);
-    			attr_dev(input7, "class", "range svelte-1vzb36m");
+    			add_location(div101, file$3, 979, 6, 35721);
+    			attr_dev(div102, "class", "slidertext svelte-17tkxes");
+    			add_location(div102, file$3, 980, 6, 35865);
+    			attr_dev(input7, "class", "range svelte-17tkxes");
     			attr_dev(input7, "type", "range");
     			attr_dev(input7, "min", input7_min_value = (ctx.D_infectious)+0.1);
     			attr_dev(input7, "max", "100");
     			attr_dev(input7, "step", "0.01");
-    			add_location(input7, file$3, 968, 6, 35961);
-    			attr_dev(div103, "class", "column svelte-1vzb36m");
-    			add_location(div103, file$3, 961, 4, 35427);
-    			attr_dev(div104, "class", "paneltitle svelte-1vzb36m");
-    			add_location(div104, file$3, 972, 6, 36107);
-    			add_location(br9, file$3, 973, 72, 36224);
-    			attr_dev(div105, "class", "paneldesc svelte-1vzb36m");
+    			add_location(input7, file$3, 981, 6, 35922);
+    			attr_dev(div103, "class", "column svelte-17tkxes");
+    			add_location(div103, file$3, 974, 4, 35388);
+    			attr_dev(div104, "class", "paneltitle svelte-17tkxes");
+    			add_location(div104, file$3, 985, 6, 36068);
+    			add_location(br9, file$3, 986, 72, 36185);
+    			attr_dev(div105, "class", "paneldesc svelte-17tkxes");
     			set_style(div105, "height", "30px");
-    			add_location(div105, file$3, 973, 6, 36158);
-    			attr_dev(div106, "class", "slidertext svelte-1vzb36m");
-    			add_location(div106, file$3, 974, 6, 36241);
-    			attr_dev(input8, "class", "range svelte-1vzb36m");
+    			add_location(div105, file$3, 986, 6, 36119);
+    			attr_dev(div106, "class", "slidertext svelte-17tkxes");
+    			add_location(div106, file$3, 987, 6, 36202);
+    			attr_dev(input8, "class", "range svelte-17tkxes");
     			set_style(input8, "margin-bottom", "8px");
     			attr_dev(input8, "type", "range");
     			attr_dev(input8, "min", 0.1);
     			attr_dev(input8, "max", "100");
     			attr_dev(input8, "step", "0.01");
-    			add_location(input8, file$3, 975, 6, 36302);
-    			add_location(br10, file$3, 976, 124, 36545);
-    			attr_dev(div107, "class", "paneldesc svelte-1vzb36m");
+    			add_location(input8, file$3, 988, 6, 36263);
+    			add_location(br10, file$3, 989, 124, 36506);
+    			attr_dev(div107, "class", "paneldesc svelte-17tkxes");
     			set_style(div107, "height", "29px");
     			set_style(div107, "border-top", "1px solid #EEE");
     			set_style(div107, "padding-top", "10px");
-    			add_location(div107, file$3, 976, 6, 36427);
-    			attr_dev(div108, "class", "slidertext svelte-1vzb36m");
-    			add_location(div108, file$3, 977, 6, 36562);
-    			attr_dev(input9, "class", "range svelte-1vzb36m");
+    			add_location(div107, file$3, 989, 6, 36388);
+    			attr_dev(div108, "class", "slidertext svelte-17tkxes");
+    			add_location(div108, file$3, 990, 6, 36523);
+    			attr_dev(input9, "class", "range svelte-17tkxes");
     			attr_dev(input9, "type", "range");
     			attr_dev(input9, "min", 0.5);
     			attr_dev(input9, "max", "100");
     			attr_dev(input9, "step", "0.01");
-    			add_location(input9, file$3, 978, 6, 36621);
-    			attr_dev(div109, "class", "column svelte-1vzb36m");
-    			add_location(div109, file$3, 971, 4, 36080);
-    			attr_dev(div110, "class", "paneltitle svelte-1vzb36m");
-    			add_location(div110, file$3, 982, 6, 36754);
-    			add_location(br11, file$3, 983, 70, 36870);
-    			attr_dev(div111, "class", "paneldesc svelte-1vzb36m");
+    			add_location(input9, file$3, 991, 6, 36582);
+    			attr_dev(div109, "class", "column svelte-17tkxes");
+    			add_location(div109, file$3, 984, 4, 36041);
+    			attr_dev(div110, "class", "paneltitle svelte-17tkxes");
+    			add_location(div110, file$3, 995, 6, 36715);
+    			add_location(br11, file$3, 996, 70, 36831);
+    			attr_dev(div111, "class", "paneldesc svelte-17tkxes");
     			set_style(div111, "height", "30px");
-    			add_location(div111, file$3, 983, 6, 36806);
-    			attr_dev(div112, "class", "slidertext svelte-1vzb36m");
-    			add_location(div112, file$3, 984, 6, 36887);
-    			attr_dev(input10, "class", "range svelte-1vzb36m");
+    			add_location(div111, file$3, 996, 6, 36767);
+    			attr_dev(div112, "class", "slidertext svelte-17tkxes");
+    			add_location(div112, file$3, 997, 6, 36848);
+    			attr_dev(input10, "class", "range svelte-17tkxes");
     			set_style(input10, "margin-bottom", "8px");
     			attr_dev(input10, "type", "range");
     			attr_dev(input10, "min", 0);
     			attr_dev(input10, "max", "1");
     			attr_dev(input10, "step", "0.0001");
-    			add_location(input10, file$3, 985, 6, 36953);
-    			add_location(br12, file$3, 986, 120, 37186);
-    			attr_dev(div113, "class", "paneldesc svelte-1vzb36m");
+    			add_location(input10, file$3, 998, 6, 36914);
+    			add_location(br12, file$3, 999, 120, 37141);
+    			attr_dev(div113, "class", "paneldesc svelte-17tkxes");
     			set_style(div113, "height", "29px");
     			set_style(div113, "border-top", "1px solid #EEE");
     			set_style(div113, "padding-top", "10px");
-    			add_location(div113, file$3, 986, 6, 37072);
-    			attr_dev(div114, "class", "slidertext svelte-1vzb36m");
-    			add_location(div114, file$3, 987, 6, 37203);
-    			attr_dev(input11, "class", "range svelte-1vzb36m");
+    			add_location(div113, file$3, 999, 6, 37027);
+    			attr_dev(div114, "class", "slidertext svelte-17tkxes");
+    			add_location(div114, file$3, 1000, 6, 37158);
+    			attr_dev(input11, "class", "range svelte-17tkxes");
     			attr_dev(input11, "type", "range");
     			attr_dev(input11, "min", 0.5);
     			attr_dev(input11, "max", "100");
     			attr_dev(input11, "step", "0.01");
-    			add_location(input11, file$3, 988, 6, 37261);
-    			attr_dev(div115, "class", "column svelte-1vzb36m");
-    			add_location(div115, file$3, 981, 4, 36727);
-    			attr_dev(div116, "class", "row svelte-1vzb36m");
-    			add_location(div116, file$3, 928, 2, 33579);
+    			add_location(input11, file$3, 1001, 6, 37216);
+    			attr_dev(div115, "class", "column svelte-17tkxes");
+    			add_location(div115, file$3, 994, 4, 36688);
+    			attr_dev(div116, "class", "row svelte-17tkxes");
+    			add_location(div116, file$3, 941, 2, 33539);
     			set_style(div117, "height", "220px");
-    			add_location(div117, file$3, 922, 0, 33280);
+    			add_location(div117, file$3, 935, 0, 33240);
     			set_style(div118, "position", "relative");
     			set_style(div118, "height", "12px");
-    			add_location(div118, file$3, 994, 0, 37379);
-    			attr_dev(p0, "class", "center svelte-1vzb36m");
-    			add_location(p0, file$3, 996, 0, 37433);
+    			add_location(div118, file$3, 1007, 0, 37334);
+    			attr_dev(p0, "class", "center svelte-17tkxes");
+    			add_location(p0, file$3, 1009, 0, 37388);
     			attr_dev(a0, "href", "https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SEIR_model");
-    			attr_dev(a0, "class", "svelte-1vzb36m");
-    			add_location(a0, file$3, 1001, 74, 37918);
-    			add_location(b1, file$3, 1001, 71, 37915);
-    			add_location(b2, file$3, 1001, 180, 38024);
-    			add_location(b3, file$3, 1001, 233, 38077);
+    			attr_dev(a0, "class", "svelte-17tkxes");
+    			add_location(a0, file$3, 1014, 74, 37873);
+    			add_location(b1, file$3, 1014, 71, 37870);
+    			add_location(b2, file$3, 1014, 180, 37979);
+    			add_location(b3, file$3, 1014, 233, 38032);
     			set_style(span16, "color", ctx.colors[4]);
-    			add_location(span16, file$3, 1001, 201, 38045);
-    			add_location(b4, file$3, 1001, 289, 38133);
+    			add_location(span16, file$3, 1014, 201, 38000);
+    			add_location(b4, file$3, 1014, 289, 38088);
     			set_style(span17, "color", ctx.colors[3]);
-    			add_location(span17, file$3, 1001, 257, 38101);
-    			add_location(b5, file$3, 1001, 320, 38164);
-    			add_location(span18, file$3, 1001, 314, 38158);
+    			add_location(span17, file$3, 1014, 257, 38056);
+    			add_location(b5, file$3, 1014, 320, 38119);
+    			add_location(span18, file$3, 1014, 314, 38113);
     			attr_dev(a1, "href", "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(20)30260-9/fulltext");
-    			attr_dev(a1, "class", "svelte-1vzb36m");
-    			add_location(a1, file$3, 1001, 416, 38260);
+    			attr_dev(a1, "class", "svelte-17tkxes");
+    			add_location(a1, file$3, 1014, 416, 38215);
     			attr_dev(a2, "href", "https://cmmid.github.io/topics/covid19/current-patterns-transmission/wuhan-early-dynamics.html");
-    			attr_dev(a2, "class", "svelte-1vzb36m");
-    			add_location(a2, file$3, 1001, 526, 38370);
+    			attr_dev(a2, "class", "svelte-17tkxes");
+    			add_location(a2, file$3, 1014, 526, 38325);
     			set_style(span19, "color", "#777");
-    			add_location(span19, file$3, 1002, 0, 38654);
-    			attr_dev(p1, "class", "center svelte-1vzb36m");
-    			add_location(p1, file$3, 1000, 0, 37823);
+    			add_location(span19, file$3, 1015, 0, 38609);
+    			attr_dev(p1, "class", "center svelte-17tkxes");
+    			add_location(p1, file$3, 1013, 0, 37778);
     			attr_dev(a3, "href", "https://www.cdc.gov/coronavirus/2019-ncov/hcp/guidance-risk-assesment-hcp.html");
-    			attr_dev(a3, "class", "svelte-1vzb36m");
-    			add_location(a3, file$3, 1007, 203, 39083);
+    			attr_dev(a3, "class", "svelte-17tkxes");
+    			add_location(a3, file$3, 1020, 203, 39037);
     			attr_dev(input12, "type", "text");
     			set_style(input12, "width", "" + (ctx.Math.ceil(ctx.Math.log10(ctx.p_num_ind))*9.5 + 5) + "px");
     			set_style(input12, "font-size", "15.5px");
     			set_style(input12, "color", "#777");
-    			add_location(input12, file$3, 1007, 315, 39195);
+    			add_location(input12, file$3, 1020, 315, 39149);
     			attr_dev(a4, "href", "https://www.cdc.gov/mmwr/volumes/69/wr/mm6909e1.htm?s_cid=mm6909e1_w");
-    			attr_dev(a4, "class", "svelte-1vzb36m");
-    			add_location(a4, file$3, 1007, 576, 39456);
-    			attr_dev(p2, "class", "center svelte-1vzb36m");
-    			add_location(p2, file$3, 1006, 0, 38859);
-    			attr_dev(p3, "class", "center svelte-1vzb36m");
-    			add_location(p3, file$3, 1011, 0, 39561);
-    			attr_dev(th0, "class", "svelte-1vzb36m");
-    			add_location(th0, file$3, 1018, 4, 39776);
-    			attr_dev(th1, "class", "svelte-1vzb36m");
-    			add_location(th1, file$3, 1019, 4, 39790);
-    			add_location(br13, file$3, 1020, 27, 39835);
+    			attr_dev(a4, "class", "svelte-17tkxes");
+    			add_location(a4, file$3, 1020, 576, 39410);
+    			attr_dev(p2, "class", "center svelte-17tkxes");
+    			add_location(p2, file$3, 1019, 0, 38813);
+    			attr_dev(p3, "class", "center svelte-17tkxes");
+    			add_location(p3, file$3, 1024, 0, 39515);
+    			attr_dev(th0, "class", "svelte-17tkxes");
+    			add_location(th0, file$3, 1031, 4, 39730);
+    			attr_dev(th1, "class", "svelte-17tkxes");
+    			add_location(th1, file$3, 1032, 4, 39744);
+    			add_location(br13, file$3, 1033, 27, 39789);
     			html_tag_3 = new HtmlTag(raw5_value, null);
-    			attr_dev(th2, "class", "svelte-1vzb36m");
-    			add_location(th2, file$3, 1020, 4, 39812);
-    			add_location(br14, file$3, 1021, 25, 39908);
+    			attr_dev(th2, "class", "svelte-17tkxes");
+    			add_location(th2, file$3, 1033, 4, 39766);
+    			add_location(br14, file$3, 1034, 25, 39862);
     			html_tag_4 = new HtmlTag(raw6_value, t276);
-    			attr_dev(th3, "class", "svelte-1vzb36m");
-    			add_location(th3, file$3, 1021, 4, 39887);
-    			add_location(br15, file$3, 1022, 25, 39992);
+    			attr_dev(th3, "class", "svelte-17tkxes");
+    			add_location(th3, file$3, 1034, 4, 39841);
+    			add_location(br15, file$3, 1035, 25, 39946);
     			html_tag_5 = new HtmlTag(raw7_value, t280);
-    			attr_dev(th4, "class", "svelte-1vzb36m");
-    			add_location(th4, file$3, 1022, 4, 39971);
-    			attr_dev(tr0, "class", "svelte-1vzb36m");
-    			add_location(tr0, file$3, 1017, 2, 39767);
+    			attr_dev(th4, "class", "svelte-17tkxes");
+    			add_location(th4, file$3, 1035, 4, 39925);
+    			attr_dev(tr0, "class", "svelte-17tkxes");
+    			add_location(tr0, file$3, 1030, 2, 39721);
     			attr_dev(a5, "href", "https://cmmid.github.io/topics/covid19/current-patterns-transmission/wuhan-early-dynamics.html");
-    			attr_dev(a5, "class", "svelte-1vzb36m");
-    			add_location(a5, file$3, 1025, 20, 40086);
+    			attr_dev(a5, "class", "svelte-17tkxes");
+    			add_location(a5, file$3, 1038, 20, 40040);
     			attr_dev(td0, "width", "27%");
-    			attr_dev(td0, "class", "svelte-1vzb36m");
-    			add_location(td0, file$3, 1025, 4, 40070);
-    			attr_dev(td1, "class", "svelte-1vzb36m");
-    			add_location(td1, file$3, 1026, 4, 40223);
-    			attr_dev(td2, "class", "svelte-1vzb36m");
-    			add_location(td2, file$3, 1027, 4, 40247);
-    			attr_dev(td3, "class", "svelte-1vzb36m");
-    			add_location(td3, file$3, 1028, 4, 40276);
-    			attr_dev(td4, "class", "svelte-1vzb36m");
-    			add_location(td4, file$3, 1029, 4, 40293);
-    			attr_dev(tr1, "class", "svelte-1vzb36m");
-    			add_location(tr1, file$3, 1024, 2, 40061);
+    			attr_dev(td0, "class", "svelte-17tkxes");
+    			add_location(td0, file$3, 1038, 4, 40024);
+    			attr_dev(td1, "class", "svelte-17tkxes");
+    			add_location(td1, file$3, 1039, 4, 40177);
+    			attr_dev(td2, "class", "svelte-17tkxes");
+    			add_location(td2, file$3, 1040, 4, 40197);
+    			attr_dev(td3, "class", "svelte-17tkxes");
+    			add_location(td3, file$3, 1041, 4, 40226);
+    			attr_dev(td4, "class", "svelte-17tkxes");
+    			add_location(td4, file$3, 1042, 4, 40243);
+    			attr_dev(tr1, "class", "svelte-17tkxes");
+    			add_location(tr1, file$3, 1037, 2, 40015);
     			attr_dev(a6, "href", "https://www.nejm.org/doi/full/10.1056/NEJMoa2001316");
-    			attr_dev(a6, "class", "svelte-1vzb36m");
-    			add_location(a6, file$3, 1032, 8, 40329);
-    			attr_dev(td5, "class", "svelte-1vzb36m");
-    			add_location(td5, file$3, 1032, 4, 40325);
-    			attr_dev(td6, "class", "svelte-1vzb36m");
-    			add_location(td6, file$3, 1033, 4, 40426);
-    			attr_dev(td7, "class", "svelte-1vzb36m");
-    			add_location(td7, file$3, 1034, 4, 40450);
-    			attr_dev(td8, "class", "svelte-1vzb36m");
-    			add_location(td8, file$3, 1035, 4, 40479);
-    			attr_dev(td9, "class", "svelte-1vzb36m");
-    			add_location(td9, file$3, 1036, 4, 40508);
-    			attr_dev(tr2, "class", "svelte-1vzb36m");
-    			add_location(tr2, file$3, 1031, 2, 40316);
+    			attr_dev(a6, "class", "svelte-17tkxes");
+    			add_location(a6, file$3, 1045, 8, 40279);
+    			attr_dev(td5, "class", "svelte-17tkxes");
+    			add_location(td5, file$3, 1045, 4, 40275);
+    			attr_dev(td6, "class", "svelte-17tkxes");
+    			add_location(td6, file$3, 1046, 4, 40376);
+    			attr_dev(td7, "class", "svelte-17tkxes");
+    			add_location(td7, file$3, 1047, 4, 40396);
+    			attr_dev(td8, "class", "svelte-17tkxes");
+    			add_location(td8, file$3, 1048, 4, 40425);
+    			attr_dev(td9, "class", "svelte-17tkxes");
+    			add_location(td9, file$3, 1049, 4, 40454);
+    			attr_dev(tr2, "class", "svelte-17tkxes");
+    			add_location(tr2, file$3, 1044, 2, 40266);
     			attr_dev(a7, "href", "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(20)30260-9/fulltext");
-    			attr_dev(a7, "class", "svelte-1vzb36m");
-    			add_location(a7, file$3, 1039, 8, 40557);
-    			attr_dev(td10, "class", "svelte-1vzb36m");
-    			add_location(td10, file$3, 1039, 4, 40553);
-    			attr_dev(td11, "class", "svelte-1vzb36m");
-    			add_location(td11, file$3, 1040, 4, 40676);
-    			attr_dev(td12, "class", "svelte-1vzb36m");
-    			add_location(td12, file$3, 1041, 4, 40708);
-    			attr_dev(td13, "class", "svelte-1vzb36m");
-    			add_location(td13, file$3, 1042, 4, 40740);
-    			attr_dev(td14, "class", "svelte-1vzb36m");
-    			add_location(td14, file$3, 1043, 4, 40757);
-    			attr_dev(tr3, "class", "svelte-1vzb36m");
-    			add_location(tr3, file$3, 1038, 2, 40544);
+    			attr_dev(a7, "class", "svelte-17tkxes");
+    			add_location(a7, file$3, 1052, 8, 40503);
+    			attr_dev(td10, "class", "svelte-17tkxes");
+    			add_location(td10, file$3, 1052, 4, 40499);
+    			attr_dev(td11, "class", "svelte-17tkxes");
+    			add_location(td11, file$3, 1053, 4, 40622);
+    			attr_dev(td12, "class", "svelte-17tkxes");
+    			add_location(td12, file$3, 1054, 4, 40650);
+    			attr_dev(td13, "class", "svelte-17tkxes");
+    			add_location(td13, file$3, 1055, 4, 40682);
+    			attr_dev(td14, "class", "svelte-17tkxes");
+    			add_location(td14, file$3, 1056, 4, 40699);
+    			attr_dev(tr3, "class", "svelte-17tkxes");
+    			add_location(tr3, file$3, 1051, 2, 40490);
     			attr_dev(a8, "href", "https://www.who.int/news-room/detail/23-01-2020-statement-on-the-meeting-of-the-international-health-regulations-(2005)-emergency-committee-regarding-the-outbreak-of-novel-coronavirus-(2019-ncov)");
-    			attr_dev(a8, "class", "svelte-1vzb36m");
-    			add_location(a8, file$3, 1046, 8, 40793);
-    			attr_dev(td15, "class", "svelte-1vzb36m");
-    			add_location(td15, file$3, 1046, 4, 40789);
-    			attr_dev(td16, "class", "svelte-1vzb36m");
-    			add_location(td16, file$3, 1047, 4, 41035);
-    			attr_dev(td17, "class", "svelte-1vzb36m");
-    			add_location(td17, file$3, 1048, 4, 41059);
-    			attr_dev(td18, "class", "svelte-1vzb36m");
-    			add_location(td18, file$3, 1049, 4, 41089);
-    			attr_dev(td19, "class", "svelte-1vzb36m");
-    			add_location(td19, file$3, 1050, 4, 41103);
-    			attr_dev(tr4, "class", "svelte-1vzb36m");
-    			add_location(tr4, file$3, 1045, 2, 40780);
+    			attr_dev(a8, "class", "svelte-17tkxes");
+    			add_location(a8, file$3, 1059, 8, 40735);
+    			attr_dev(td15, "class", "svelte-17tkxes");
+    			add_location(td15, file$3, 1059, 4, 40731);
+    			attr_dev(td16, "class", "svelte-17tkxes");
+    			add_location(td16, file$3, 1060, 4, 40977);
+    			attr_dev(td17, "class", "svelte-17tkxes");
+    			add_location(td17, file$3, 1061, 4, 40997);
+    			attr_dev(td18, "class", "svelte-17tkxes");
+    			add_location(td18, file$3, 1062, 4, 41027);
+    			attr_dev(td19, "class", "svelte-17tkxes");
+    			add_location(td19, file$3, 1063, 4, 41041);
+    			attr_dev(tr4, "class", "svelte-17tkxes");
+    			add_location(tr4, file$3, 1058, 2, 40722);
     			attr_dev(a9, "href", "https://www.who.int/docs/default-source/coronaviruse/who-china-joint-mission-on-covid-19-final-report.pdf");
-    			attr_dev(a9, "class", "svelte-1vzb36m");
-    			add_location(a9, file$3, 1053, 8, 41136);
-    			attr_dev(td20, "class", "svelte-1vzb36m");
-    			add_location(td20, file$3, 1053, 4, 41132);
-    			attr_dev(td21, "class", "svelte-1vzb36m");
-    			add_location(td21, file$3, 1054, 4, 41292);
-    			attr_dev(td22, "class", "svelte-1vzb36m");
-    			add_location(td22, file$3, 1055, 4, 41316);
-    			attr_dev(td23, "class", "svelte-1vzb36m");
-    			add_location(td23, file$3, 1056, 4, 41346);
-    			attr_dev(td24, "class", "svelte-1vzb36m");
-    			add_location(td24, file$3, 1057, 4, 41375);
-    			attr_dev(tr5, "class", "svelte-1vzb36m");
-    			add_location(tr5, file$3, 1052, 2, 41123);
+    			attr_dev(a9, "class", "svelte-17tkxes");
+    			add_location(a9, file$3, 1066, 8, 41074);
+    			attr_dev(td20, "class", "svelte-17tkxes");
+    			add_location(td20, file$3, 1066, 4, 41070);
+    			attr_dev(td21, "class", "svelte-17tkxes");
+    			add_location(td21, file$3, 1067, 4, 41230);
+    			attr_dev(td22, "class", "svelte-17tkxes");
+    			add_location(td22, file$3, 1068, 4, 41250);
+    			attr_dev(td23, "class", "svelte-17tkxes");
+    			add_location(td23, file$3, 1069, 4, 41280);
+    			attr_dev(td24, "class", "svelte-17tkxes");
+    			add_location(td24, file$3, 1070, 4, 41309);
+    			attr_dev(tr5, "class", "svelte-17tkxes");
+    			add_location(tr5, file$3, 1065, 2, 41061);
     			attr_dev(a10, "href", "https://www.biorxiv.org/content/10.1101/2020.01.25.919787v2");
-    			attr_dev(a10, "class", "svelte-1vzb36m");
-    			add_location(a10, file$3, 1060, 8, 41408);
-    			attr_dev(td25, "class", "svelte-1vzb36m");
-    			add_location(td25, file$3, 1060, 4, 41404);
-    			attr_dev(td26, "class", "svelte-1vzb36m");
-    			add_location(td26, file$3, 1061, 4, 41505);
-    			attr_dev(td27, "class", "svelte-1vzb36m");
-    			add_location(td27, file$3, 1062, 4, 41528);
-    			attr_dev(td28, "class", "svelte-1vzb36m");
-    			add_location(td28, file$3, 1063, 4, 41557);
-    			attr_dev(td29, "class", "svelte-1vzb36m");
-    			add_location(td29, file$3, 1064, 4, 41587);
-    			attr_dev(tr6, "class", "svelte-1vzb36m");
-    			add_location(tr6, file$3, 1059, 2, 41395);
+    			attr_dev(a10, "class", "svelte-17tkxes");
+    			add_location(a10, file$3, 1073, 8, 41342);
+    			attr_dev(td25, "class", "svelte-17tkxes");
+    			add_location(td25, file$3, 1073, 4, 41338);
+    			attr_dev(td26, "class", "svelte-17tkxes");
+    			add_location(td26, file$3, 1074, 4, 41439);
+    			attr_dev(td27, "class", "svelte-17tkxes");
+    			add_location(td27, file$3, 1075, 4, 41462);
+    			attr_dev(td28, "class", "svelte-17tkxes");
+    			add_location(td28, file$3, 1076, 4, 41491);
+    			attr_dev(td29, "class", "svelte-17tkxes");
+    			add_location(td29, file$3, 1077, 4, 41521);
+    			attr_dev(tr6, "class", "svelte-17tkxes");
+    			add_location(tr6, file$3, 1072, 2, 41329);
     			attr_dev(a11, "href", "https://academic.oup.com/jtm/advance-article/doi/10.1093/jtm/taaa030/5766334");
-    			attr_dev(a11, "class", "svelte-1vzb36m");
-    			add_location(a11, file$3, 1067, 8, 41633);
-    			attr_dev(td30, "class", "svelte-1vzb36m");
-    			add_location(td30, file$3, 1067, 4, 41629);
-    			attr_dev(td31, "class", "svelte-1vzb36m");
-    			add_location(td31, file$3, 1068, 4, 41768);
-    			attr_dev(td32, "class", "svelte-1vzb36m");
-    			add_location(td32, file$3, 1069, 4, 41798);
-    			attr_dev(td33, "class", "svelte-1vzb36m");
-    			add_location(td33, file$3, 1070, 4, 41816);
-    			attr_dev(td34, "class", "svelte-1vzb36m");
-    			add_location(td34, file$3, 1071, 4, 41833);
-    			attr_dev(tr7, "class", "svelte-1vzb36m");
-    			add_location(tr7, file$3, 1066, 2, 41620);
+    			attr_dev(a11, "class", "svelte-17tkxes");
+    			add_location(a11, file$3, 1080, 8, 41567);
+    			attr_dev(td30, "class", "svelte-17tkxes");
+    			add_location(td30, file$3, 1080, 4, 41563);
+    			attr_dev(td31, "class", "svelte-17tkxes");
+    			add_location(td31, file$3, 1081, 4, 41702);
+    			attr_dev(td32, "class", "svelte-17tkxes");
+    			add_location(td32, file$3, 1082, 4, 41732);
+    			attr_dev(td33, "class", "svelte-17tkxes");
+    			add_location(td33, file$3, 1083, 4, 41750);
+    			attr_dev(td34, "class", "svelte-17tkxes");
+    			add_location(td34, file$3, 1084, 4, 41767);
+    			attr_dev(tr7, "class", "svelte-17tkxes");
+    			add_location(tr7, file$3, 1079, 2, 41554);
     			attr_dev(a12, "href", "https://www.eurosurveillance.org/content/10.2807/1560-7917.ES.2020.25.5.2000062");
-    			attr_dev(a12, "class", "svelte-1vzb36m");
-    			add_location(a12, file$3, 1074, 8, 41870);
-    			attr_dev(td35, "class", "svelte-1vzb36m");
-    			add_location(td35, file$3, 1074, 4, 41866);
-    			attr_dev(td36, "class", "svelte-1vzb36m");
-    			add_location(td36, file$3, 1075, 4, 42005);
-    			attr_dev(td37, "class", "svelte-1vzb36m");
-    			add_location(td37, file$3, 1076, 4, 42024);
-    			attr_dev(td38, "class", "svelte-1vzb36m");
-    			add_location(td38, file$3, 1077, 4, 42038);
-    			attr_dev(td39, "class", "svelte-1vzb36m");
-    			add_location(td39, file$3, 1078, 4, 42067);
-    			attr_dev(tr8, "class", "svelte-1vzb36m");
-    			add_location(tr8, file$3, 1073, 2, 41857);
+    			attr_dev(a12, "class", "svelte-17tkxes");
+    			add_location(a12, file$3, 1087, 8, 41804);
+    			attr_dev(td35, "class", "svelte-17tkxes");
+    			add_location(td35, file$3, 1087, 4, 41800);
+    			attr_dev(td36, "class", "svelte-17tkxes");
+    			add_location(td36, file$3, 1088, 4, 41939);
+    			attr_dev(td37, "class", "svelte-17tkxes");
+    			add_location(td37, file$3, 1089, 4, 41958);
+    			attr_dev(td38, "class", "svelte-17tkxes");
+    			add_location(td38, file$3, 1090, 4, 41972);
+    			attr_dev(td39, "class", "svelte-17tkxes");
+    			add_location(td39, file$3, 1091, 4, 42001);
+    			attr_dev(tr8, "class", "svelte-17tkxes");
+    			add_location(tr8, file$3, 1086, 2, 41791);
     			attr_dev(a13, "href", "https://www.medrxiv.org/content/10.1101/2020.01.23.20018549v2.article-info");
-    			attr_dev(a13, "class", "svelte-1vzb36m");
-    			add_location(a13, file$3, 1081, 8, 42100);
-    			attr_dev(td40, "class", "svelte-1vzb36m");
-    			add_location(td40, file$3, 1081, 4, 42096);
-    			attr_dev(td41, "class", "svelte-1vzb36m");
-    			add_location(td41, file$3, 1082, 4, 42212);
-    			attr_dev(td42, "class", "svelte-1vzb36m");
-    			add_location(td42, file$3, 1083, 4, 42231);
-    			attr_dev(td43, "class", "svelte-1vzb36m");
-    			add_location(td43, file$3, 1084, 4, 42263);
-    			attr_dev(td44, "class", "svelte-1vzb36m");
-    			add_location(td44, file$3, 1085, 4, 42277);
-    			attr_dev(tr9, "class", "svelte-1vzb36m");
-    			add_location(tr9, file$3, 1080, 2, 42087);
+    			attr_dev(a13, "class", "svelte-17tkxes");
+    			add_location(a13, file$3, 1094, 8, 42034);
+    			attr_dev(td40, "class", "svelte-17tkxes");
+    			add_location(td40, file$3, 1094, 4, 42030);
+    			attr_dev(td41, "class", "svelte-17tkxes");
+    			add_location(td41, file$3, 1095, 4, 42146);
+    			attr_dev(td42, "class", "svelte-17tkxes");
+    			add_location(td42, file$3, 1096, 4, 42165);
+    			attr_dev(td43, "class", "svelte-17tkxes");
+    			add_location(td43, file$3, 1097, 4, 42197);
+    			attr_dev(td44, "class", "svelte-17tkxes");
+    			add_location(td44, file$3, 1098, 4, 42211);
+    			attr_dev(tr9, "class", "svelte-17tkxes");
+    			add_location(tr9, file$3, 1093, 2, 42021);
     			attr_dev(a14, "href", "https://www.medrxiv.org/content/10.1101/2020.03.03.20028423v1");
-    			attr_dev(a14, "class", "svelte-1vzb36m");
-    			add_location(a14, file$3, 1088, 8, 42310);
-    			attr_dev(td45, "class", "svelte-1vzb36m");
-    			add_location(td45, file$3, 1088, 4, 42306);
-    			attr_dev(td46, "class", "svelte-1vzb36m");
-    			add_location(td46, file$3, 1089, 4, 42407);
-    			attr_dev(td47, "class", "svelte-1vzb36m");
-    			add_location(td47, file$3, 1090, 4, 42429);
-    			attr_dev(td48, "class", "svelte-1vzb36m");
-    			add_location(td48, file$3, 1091, 4, 42443);
-    			attr_dev(td49, "class", "svelte-1vzb36m");
-    			add_location(td49, file$3, 1092, 4, 42472);
-    			attr_dev(td50, "class", "svelte-1vzb36m");
-    			add_location(td50, file$3, 1093, 4, 42499);
-    			attr_dev(tr10, "class", "svelte-1vzb36m");
-    			add_location(tr10, file$3, 1087, 2, 42297);
+    			attr_dev(a14, "class", "svelte-17tkxes");
+    			add_location(a14, file$3, 1101, 8, 42244);
+    			attr_dev(td45, "class", "svelte-17tkxes");
+    			add_location(td45, file$3, 1101, 4, 42240);
+    			attr_dev(td46, "class", "svelte-17tkxes");
+    			add_location(td46, file$3, 1102, 4, 42341);
+    			attr_dev(td47, "class", "svelte-17tkxes");
+    			add_location(td47, file$3, 1103, 4, 42363);
+    			attr_dev(td48, "class", "svelte-17tkxes");
+    			add_location(td48, file$3, 1104, 4, 42377);
+    			attr_dev(td49, "class", "svelte-17tkxes");
+    			add_location(td49, file$3, 1105, 4, 42406);
+    			attr_dev(td50, "class", "svelte-17tkxes");
+    			add_location(td50, file$3, 1106, 4, 42433);
+    			attr_dev(tr10, "class", "svelte-17tkxes");
+    			add_location(tr10, file$3, 1100, 2, 42231);
     			attr_dev(a15, "href", "https://www.mdpi.com/2077-0383/9/2/462");
-    			attr_dev(a15, "class", "svelte-1vzb36m");
-    			add_location(a15, file$3, 1097, 8, 42533);
-    			attr_dev(td51, "class", "svelte-1vzb36m");
-    			add_location(td51, file$3, 1097, 4, 42529);
-    			attr_dev(td52, "class", "svelte-1vzb36m");
-    			add_location(td52, file$3, 1098, 4, 42609);
-    			attr_dev(td53, "class", "svelte-1vzb36m");
-    			add_location(td53, file$3, 1099, 4, 42628);
-    			attr_dev(td54, "class", "svelte-1vzb36m");
-    			add_location(td54, file$3, 1100, 4, 42660);
-    			attr_dev(td55, "class", "svelte-1vzb36m");
-    			add_location(td55, file$3, 1101, 4, 42674);
-    			attr_dev(tr11, "class", "svelte-1vzb36m");
-    			add_location(tr11, file$3, 1096, 2, 42520);
+    			attr_dev(a15, "class", "svelte-17tkxes");
+    			add_location(a15, file$3, 1110, 8, 42467);
+    			attr_dev(td51, "class", "svelte-17tkxes");
+    			add_location(td51, file$3, 1110, 4, 42463);
+    			attr_dev(td52, "class", "svelte-17tkxes");
+    			add_location(td52, file$3, 1111, 4, 42543);
+    			attr_dev(td53, "class", "svelte-17tkxes");
+    			add_location(td53, file$3, 1112, 4, 42562);
+    			attr_dev(td54, "class", "svelte-17tkxes");
+    			add_location(td54, file$3, 1113, 4, 42594);
+    			attr_dev(td55, "class", "svelte-17tkxes");
+    			add_location(td55, file$3, 1114, 4, 42608);
+    			attr_dev(tr11, "class", "svelte-17tkxes");
+    			add_location(tr11, file$3, 1109, 2, 42454);
     			set_style(table, "width", "100%");
     			set_style(table, "margin", "auto");
     			set_style(table, "font-weight", "300");
     			set_style(table, "border-spacing", "inherit");
-    			add_location(table, file$3, 1016, 0, 39682);
-    			attr_dev(div119, "class", "center svelte-1vzb36m");
-    			add_location(div119, file$3, 1015, 0, 39661);
+    			add_location(table, file$3, 1029, 0, 39636);
+    			attr_dev(div119, "class", "center svelte-17tkxes");
+    			add_location(div119, file$3, 1028, 0, 39615);
     			attr_dev(a16, "href", "https://academic.oup.com/jtm/advance-article/doi/10.1093/jtm/taaa021/5735319");
-    			attr_dev(a16, "class", "svelte-1vzb36m");
-    			add_location(a16, file$3, 1109, 5, 42735);
+    			attr_dev(a16, "class", "svelte-17tkxes");
+    			add_location(a16, file$3, 1122, 5, 42669);
     			attr_dev(a17, "href", "https://www.who.int/docs/default-source/coronaviruse/who-china-joint-mission-on-covid-19-final-report.pdf");
-    			attr_dev(a17, "class", "svelte-1vzb36m");
-    			add_location(a17, file$3, 1109, 256, 42986);
-    			attr_dev(p4, "class", "center svelte-1vzb36m");
-    			add_location(p4, file$3, 1108, 0, 42711);
+    			attr_dev(a17, "class", "svelte-17tkxes");
+    			add_location(a17, file$3, 1122, 256, 42920);
+    			attr_dev(p4, "class", "center svelte-17tkxes");
+    			add_location(p4, file$3, 1121, 0, 42645);
     			attr_dev(a18, "href", "https://twitter.com/gabeeegoooh");
-    			attr_dev(a18, "class", "svelte-1vzb36m");
-    			add_location(a18, file$3, 1113, 22, 43166);
+    			attr_dev(a18, "class", "svelte-17tkxes");
+    			add_location(a18, file$3, 1126, 22, 43099);
     			attr_dev(a19, "href", "mailto:izmegabe@gmail.com");
-    			attr_dev(a19, "class", "svelte-1vzb36m");
-    			add_location(a19, file$3, 1113, 85, 43229);
-    			attr_dev(p5, "class", "center svelte-1vzb36m");
-    			add_location(p5, file$3, 1112, 0, 43125);
-    			script.async = true;
-    			attr_dev(script, "src", "https://platform.twitter.com/widgets.js");
-    			attr_dev(script, "charset", "utf-8");
-    			add_location(script, file$3, 1117, 116, 43416);
-    			attr_dev(a20, "href", "https://twitter.com/gabeeegoooh?ref_src=twsrc%5Etfw");
-    			attr_dev(a20, "class", "twitter-follow-button svelte-1vzb36m");
-    			attr_dev(a20, "data-show-count", "false");
-    			add_location(a20, file$3, 1117, 0, 43300);
-    			attr_dev(p6, "class", "center svelte-1vzb36m");
-    			add_location(p6, file$3, 1116, 0, 43281);
-    			add_location(b6, file$3, 1122, 0, 43530);
-    			add_location(br16, file$3, 1122, 22, 43552);
-    			html_tag_6 = new HtmlTag(raw8_value, t398);
-    			add_location(i14, file$3, 1123, 172, 43729);
-    			add_location(i15, file$3, 1123, 245, 43802);
-    			add_location(i16, file$3, 1123, 316, 43873);
-    			attr_dev(p7, "class", "center svelte-1vzb36m");
-    			add_location(p7, file$3, 1121, 0, 43509);
-    			add_location(b7, file$3, 1127, 0, 44334);
-    			add_location(br17, file$3, 1127, 25, 44359);
+    			attr_dev(a19, "class", "svelte-17tkxes");
+    			add_location(a19, file$3, 1126, 85, 43162);
+    			attr_dev(a20, "href", "http://gabgoh.github.io/");
+    			attr_dev(a20, "class", "svelte-17tkxes");
+    			add_location(a20, file$3, 1126, 134, 43211);
+    			attr_dev(p5, "class", "center svelte-17tkxes");
+    			add_location(p5, file$3, 1125, 0, 43058);
+    			add_location(b6, file$3, 1135, 0, 43522);
+    			add_location(br16, file$3, 1135, 22, 43544);
+    			html_tag_6 = new HtmlTag(raw8_value, t399);
+    			add_location(i14, file$3, 1136, 172, 43721);
+    			add_location(i15, file$3, 1136, 245, 43794);
+    			add_location(i16, file$3, 1136, 316, 43865);
+    			attr_dev(p6, "class", "center svelte-17tkxes");
+    			add_location(p6, file$3, 1134, 0, 43501);
+    			add_location(b7, file$3, 1140, 0, 44326);
+    			add_location(br17, file$3, 1140, 25, 44351);
     			attr_dev(a21, "href", "https://enkimute.github.io/");
-    			attr_dev(a21, "class", "svelte-1vzb36m");
-    			add_location(a21, file$3, 1128, 0, 44364);
+    			attr_dev(a21, "class", "svelte-17tkxes");
+    			add_location(a21, file$3, 1141, 0, 44356);
     			attr_dev(a22, "href", "https://twitter.com/ch402");
-    			attr_dev(a22, "class", "svelte-1vzb36m");
-    			add_location(a22, file$3, 1128, 82, 44446);
+    			attr_dev(a22, "class", "svelte-17tkxes");
+    			add_location(a22, file$3, 1141, 82, 44438);
     			attr_dev(a23, "href", "https://twitter.com/shancarter");
-    			attr_dev(a23, "class", "svelte-1vzb36m");
-    			add_location(a23, file$3, 1128, 134, 44498);
+    			attr_dev(a23, "class", "svelte-17tkxes");
+    			add_location(a23, file$3, 1141, 134, 44490);
     			attr_dev(a24, "href", "https://twitter.com/ludwigschubert");
-    			attr_dev(a24, "class", "svelte-1vzb36m");
-    			add_location(a24, file$3, 1129, 9, 44560);
-    			attr_dev(p8, "class", "center svelte-1vzb36m");
-    			add_location(p8, file$3, 1126, 0, 44313);
-    			attr_dev(div120, "class", "legendtext svelte-1vzb36m");
-    			add_location(div120, file$3, 1137, 4, 44829);
+    			attr_dev(a24, "class", "svelte-17tkxes");
+    			add_location(a24, file$3, 1142, 9, 44552);
+    			attr_dev(p7, "class", "center svelte-17tkxes");
+    			add_location(p7, file$3, 1139, 0, 44305);
+    			attr_dev(div120, "class", "legendtext svelte-17tkxes");
+    			add_location(div120, file$3, 1150, 4, 44821);
     			attr_dev(textarea, "type", "textarea");
     			attr_dev(textarea, "rows", "1");
     			attr_dev(textarea, "cols", "5000");
@@ -24454,15 +24446,15 @@
     			attr_dev(textarea, "id", "fname");
     			attr_dev(textarea, "name", "fname");
     			textarea.value = ctx.state;
-    			add_location(textarea, file$3, 1139, 6, 44895);
-    			add_location(form, file$3, 1138, 4, 44882);
-    			attr_dev(div121, "class", "center svelte-1vzb36m");
+    			add_location(textarea, file$3, 1152, 6, 44887);
+    			add_location(form, file$3, 1151, 4, 44874);
+    			attr_dev(div121, "class", "center svelte-17tkxes");
     			set_style(div121, "padding", "10px");
     			set_style(div121, "margin-top", "3px");
     			set_style(div121, "width", "925px");
-    			add_location(div121, file$3, 1136, 2, 44751);
+    			add_location(div121, file$3, 1149, 2, 44743);
     			set_style(div122, "margin-bottom", "30px");
-    			add_location(div122, file$3, 1134, 0, 44714);
+    			add_location(div122, file$3, 1147, 0, 44706);
 
     			dispose = [
     				listen_dev(div64, "mousedown", ctx.lock_yaxis),
@@ -24831,7 +24823,7 @@
     			append_dev(div96, t182);
     			append_dev(div96, input4);
 
-    			set_input_value(input4, ctx.D_incbation);
+    			set_input_value(input4, ctx.D_incubation);
 
     			append_dev(div96, t183);
     			append_dev(div96, div94);
@@ -25159,41 +25151,39 @@
     			append_dev(p5, t391);
     			append_dev(p5, a19);
     			append_dev(p5, t393);
-    			insert_dev(target, t394, anchor);
+    			append_dev(p5, a20);
+    			append_dev(p5, t395);
+    			insert_dev(target, t396, anchor);
     			insert_dev(target, p6, anchor);
-    			append_dev(p6, a20);
-    			append_dev(a20, script);
-    			insert_dev(target, t395, anchor);
+    			append_dev(p6, b6);
+    			append_dev(p6, br16);
+    			append_dev(p6, t398);
+    			html_tag_6.m(p6);
+    			append_dev(p6, t399);
+    			append_dev(p6, i14);
+    			append_dev(p6, t401);
+    			append_dev(p6, i15);
+    			append_dev(p6, t403);
+    			append_dev(p6, i16);
+    			append_dev(p6, t405);
+    			insert_dev(target, t406, anchor);
     			insert_dev(target, p7, anchor);
-    			append_dev(p7, b6);
-    			append_dev(p7, br16);
-    			append_dev(p7, t397);
-    			html_tag_6.m(p7);
-    			append_dev(p7, t398);
-    			append_dev(p7, i14);
-    			append_dev(p7, t400);
-    			append_dev(p7, i15);
-    			append_dev(p7, t402);
-    			append_dev(p7, i16);
-    			append_dev(p7, t404);
-    			insert_dev(target, t405, anchor);
-    			insert_dev(target, p8, anchor);
-    			append_dev(p8, b7);
-    			append_dev(p8, br17);
-    			append_dev(p8, t407);
-    			append_dev(p8, a21);
-    			append_dev(p8, t409);
-    			append_dev(p8, a22);
-    			append_dev(p8, t411);
-    			append_dev(p8, a23);
-    			append_dev(p8, t413);
-    			append_dev(p8, a24);
-    			append_dev(p8, t415);
-    			insert_dev(target, t416, anchor);
+    			append_dev(p7, b7);
+    			append_dev(p7, br17);
+    			append_dev(p7, t408);
+    			append_dev(p7, a21);
+    			append_dev(p7, t410);
+    			append_dev(p7, a22);
+    			append_dev(p7, t412);
+    			append_dev(p7, a23);
+    			append_dev(p7, t414);
+    			append_dev(p7, a24);
+    			append_dev(p7, t416);
+    			insert_dev(target, t417, anchor);
     			insert_dev(target, div122, anchor);
     			append_dev(div122, div121);
     			append_dev(div121, div120);
-    			append_dev(div121, t418);
+    			append_dev(div121, t419);
     			append_dev(div121, form);
     			append_dev(form, textarea);
     			current = true;
@@ -25430,11 +25420,11 @@
 
     			if (changed.R0) set_input_value(input3, ctx.R0);
 
-    			if ((!current || changed.D_incbation) && t180_value !== (t180_value = (ctx.D_incbation).toFixed(2) + "")) {
+    			if ((!current || changed.D_incubation) && t180_value !== (t180_value = (ctx.D_incubation).toFixed(2) + "")) {
     				set_data_dev(t180, t180_value);
     			}
 
-    			if (changed.D_incbation) set_input_value(input4, ctx.D_incbation);
+    			if (changed.D_incubation) set_input_value(input4, ctx.D_incubation);
 
     			if (!current || changed.D_infectious) {
     				set_data_dev(t187, ctx.D_infectious);
@@ -25636,13 +25626,11 @@
     				detach_dev(p4);
     				detach_dev(t388);
     				detach_dev(p5);
-    				detach_dev(t394);
+    				detach_dev(t396);
     				detach_dev(p6);
-    				detach_dev(t395);
+    				detach_dev(t406);
     				detach_dev(p7);
-    				detach_dev(t405);
-    				detach_dev(p8);
-    				detach_dev(t416);
+    				detach_dev(t417);
     				detach_dev(div122);
     			}
 
@@ -25669,6 +25657,10 @@
       return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
     }
 
+    function formatPageUrl(data) {
+      return `${location.protocol}//${location.host}${location.pathname}?${queryString.stringify(data)}`;
+    }
+
     function math_inline(str) {
       return katex$1.renderToString(str, {
       throwOnError: false,
@@ -25679,6 +25671,8 @@
 
     function instance$3($$self, $$props, $$invalidate) {
     	
+
+      let isMounted = false;
 
       var sum = function(arr, bools){
         var x = 0;
@@ -25707,14 +25701,13 @@
         for (var k=[],ki=0; ki<m.length; ki++) {
           var _y=y.slice(), dt=ki?((m[ki-1][0])*h):0;
           for (var l=0; l<_y.length; l++) for (var j=1; j<=ki; j++) _y[l]=_y[l]+h*(m[ki-1][j])*(k[ki-1][l]);
-          k[ki]=f(t+dt,_y,dt); 
+          k[ki]=f(t+dt,_y,dt);
         }
         for (var r=y.slice(),l=0; l<_y.length; l++) for (var j=0; j<k.length; j++) r[l]=r[l]+h*(k[j][l])*(m[ki-1][j]);
         return r;
       };
 
-      function get_solution(dt, N, I0, R0, D_incbation, D_infectious, D_recovery_mild, D_hospital_lag, D_recovery_severe, D_death, P_SEVERE, CFR, InterventionTime, InterventionAmt, duration) {
-
+      function get_solution(dt, N, I0, R0, D_incubation, D_infectious, D_recovery_mild, D_hospital_lag, D_recovery_severe, D_death, P_SEVERE, CFR, InterventionTime, InterventionAmt, duration) {
         var interpolation_steps = 40;
         var steps = 110*interpolation_steps;
         var dt = dt/interpolation_steps;
@@ -25727,17 +25720,17 @@
           if (t > InterventionTime && t < InterventionTime + duration){
             var beta = (InterventionAmt)*R0/(D_infectious);
           } else if (t > InterventionTime + duration) {
-            var beta = 0.5*R0/(D_infectious);        
+            var beta = 0.5*R0/(D_infectious);
           } else {
             var beta = R0/(D_infectious);
           }
-          var a     = 1/D_incbation;
+          var a     = 1/D_incubation;
           var gamma = 1/D_infectious;
-          
+
           var S        = x[0]; // Susectable
           var E        = x[1]; // Exposed
-          var I        = x[2]; // Infectious 
-          var Mild     = x[3]; // Recovering (Mild)     
+          var I        = x[2]; // Infectious
+          var Mild     = x[3]; // Recovering (Mild)
           var Severe   = x[4]; // Recovering (Severe at home)
           var Severe_H = x[5]; // Recovering (Severe in hospital)
           var Fatal    = x[6]; // Recovering (Fatal)
@@ -25770,7 +25763,7 @@
         var P  = [];
         var TI = [];
         var Iters = [];
-        while (steps--) { 
+        while (steps--) {
           if ((steps+1) % (sample_step) == 0) {
                 //    Dead   Hospital          Recovered        Infected   Exposed
             P.push([ N*v[9], N*(v[5]+v[6]),  N*(v[7] + v[8]), N*v[2],    N*v[1] ]);
@@ -25779,11 +25772,11 @@
             // console.log((v[0] + v[1] + v[2] + v[3] + v[4] + v[5] + v[6] + v[7] + v[8] + v[9]))
             // console.log(v[0] , v[1] , v[2] , v[3] , v[4] , v[5] , v[6] , v[7] , v[8] , v[9])
           }
-          v =integrate(method,f,v,t,dt); 
+          v =integrate(method,f,v,t,dt);
           t+=dt;
         }
-        return {"P": P, 
-                "deaths": N*v[6], 
+        return {"P": P,
+                "deaths": N*v[6],
                 "total": 1-v[0],
                 "total_infected": TI,
                 "Iters":Iters,
@@ -25803,7 +25796,7 @@
         var Pmaxstart = 0;
 
         var dragstarted = function (d) {
-          dragstarty = event.y;  
+          dragstarty = event.y;
           Pmaxstart  = Pmax;
         };
 
@@ -25837,7 +25830,7 @@
         var InterventionTimeStart = 0;
 
         var dragstarted = function (d) {
-          dragstarty = event.x;  
+          dragstarty = event.x;
           InterventionTimeStart = InterventionTime;
           $$invalidate('Plock', Plock = Pmax);
           $$invalidate('lock', lock = true);
@@ -25862,7 +25855,7 @@
         var durationStart = 0;
 
         var dragstarted = function (d) {
-          dragstarty = event.x;  
+          dragstarty = event.x;
           durationStart = duration;
           $$invalidate('Plock', Plock = Pmax);
           $$invalidate('lock', lock = true);
@@ -25893,19 +25886,22 @@
 
         if (typeof window !== 'undefined') {
           parsed = queryString.parse(window.location.search);
-          if (!(parsed.logN === undefined)) {$$invalidate('logN', logN = parsed.logN);}
-          if (!(parsed.I0 === undefined)) {$$invalidate('I0', I0 = parseFloat(parsed.I0));}
-          if (!(parsed.R0 === undefined)) {$$invalidate('R0', R0 = parseFloat(parsed.R0));}
-          if (!(parsed.D_incbation === undefined)) {$$invalidate('D_incbation', D_incbation = parseFloat(parsed.D_incbation));}
-          if (!(parsed.D_infectious === undefined)) {$$invalidate('D_infectious', D_infectious = parseFloat(parsed.D_infectious));}
-          if (!(parsed.D_recovery_mild === undefined)) {$$invalidate('D_recovery_mild', D_recovery_mild = parseFloat(parsed.D_recovery_mild));}
-          if (!(parsed.D_recovery_severe === undefined)) {$$invalidate('D_recovery_severe', D_recovery_severe = parseFloat(parsed.D_recovery_severe));}
-          if (!(parsed.CFR === undefined)) {$$invalidate('CFR', CFR = parseFloat(parsed.CFR));}
-          if (!(parsed.InterventionTime === undefined)) {$$invalidate('InterventionTime', InterventionTime = parseFloat(parsed.InterventionTime));}
-          if (!(parsed.InterventionAmt === undefined)) {$$invalidate('InterventionAmt', InterventionAmt = parseFloat(parsed.InterventionAmt));}
-          if (!(parsed.D_hospital_lag === undefined)) {$$invalidate('D_hospital_lag', D_hospital_lag = parseFloat(parsed.D_hospital_lag));}
-          if (!(parsed.P_SEVERE === undefined)) {$$invalidate('P_SEVERE', P_SEVERE = parseFloat(parsed.P_SEVERE));}
+
+          if (!(parsed.logn === undefined)) {$$invalidate('logN', logN = parsed.logn);}
+          if (!(parsed.i0 === undefined)) {$$invalidate('I0', I0 = parseFloat(parsed.i0));}
+          if (!(parsed.r0 === undefined)) {$$invalidate('R0', R0 = parseFloat(parsed.r0));}
+          if (!(parsed.d_incubation === undefined)) {$$invalidate('D_incubation', D_incubation = parseFloat(parsed.d_incubation));}
+          if (!(parsed.d_infectious === undefined)) {$$invalidate('D_infectious', D_infectious = parseFloat(parsed.d_infectious));}
+          if (!(parsed.d_recovery_mild === undefined)) {$$invalidate('D_recovery_mild', D_recovery_mild = parseFloat(parsed.d_recovery_mild));}
+          if (!(parsed.d_recovery_severe === undefined)) {$$invalidate('D_recovery_severe', D_recovery_severe = parseFloat(parsed.d_recovery_severe));}
+          if (!(parsed.cfr === undefined)) {$$invalidate('CFR', CFR = parseFloat(parsed.cfr));}
+          if (!(parsed.intervention_time === undefined)) {$$invalidate('InterventionTime', InterventionTime = parseFloat(parsed.intervention_time));}
+          if (!(parsed.intervention_amt === undefined)) {$$invalidate('InterventionAmt', InterventionAmt = parseFloat(parsed.intervention_amt));}
+          if (!(parsed.d_hospital_lag === undefined)) {$$invalidate('D_hospital_lag', D_hospital_lag = parseFloat(parsed.d_hospital_lag));}
+          if (!(parsed.p_severe === undefined)) {$$invalidate('P_SEVERE', P_SEVERE = parseFloat(parsed.p_severe));}
         }
+
+        $$invalidate('isMounted', isMounted = true);
       });
 
       function lock_yaxis(){
@@ -26005,8 +26001,8 @@
     	}
 
     	function input4_change_input_handler() {
-    		D_incbation = to_number(this.value);
-    		$$invalidate('D_incbation', D_incbation);
+    		D_incubation = to_number(this.value);
+    		$$invalidate('D_incubation', D_incubation);
     	}
 
     	function input5_change_input_handler() {
@@ -26054,6 +26050,7 @@
     	};
 
     	$$self.$inject_state = $$props => {
+    		if ('isMounted' in $$props) $$invalidate('isMounted', isMounted = $$props.isMounted);
     		if ('sum' in $$props) sum = $$props.sum;
     		if ('Integrators' in $$props) Integrators = $$props.Integrators;
     		if ('integrate' in $$props) integrate = $$props.integrate;
@@ -26073,7 +26070,7 @@
     		if ('N' in $$props) $$invalidate('N', N = $$props.N);
     		if ('I0' in $$props) $$invalidate('I0', I0 = $$props.I0);
     		if ('R0' in $$props) $$invalidate('R0', R0 = $$props.R0);
-    		if ('D_incbation' in $$props) $$invalidate('D_incbation', D_incbation = $$props.D_incbation);
+    		if ('D_incubation' in $$props) $$invalidate('D_incubation', D_incubation = $$props.D_incubation);
     		if ('D_infectious' in $$props) $$invalidate('D_infectious', D_infectious = $$props.D_infectious);
     		if ('D_recovery_mild' in $$props) $$invalidate('D_recovery_mild', D_recovery_mild = $$props.D_recovery_mild);
     		if ('D_recovery_severe' in $$props) $$invalidate('D_recovery_severe', D_recovery_severe = $$props.D_recovery_severe);
@@ -26113,25 +26110,30 @@
     		if ('log' in $$props) $$invalidate('log', log = $$props.log);
     	};
 
-    	let Time_to_death, logN, N, I0, R0, D_incbation, D_infectious, D_recovery_mild, D_recovery_severe, D_hospital_lag, D_death, CFR, InterventionTime, InterventionAmt, Time, Xmax, dt, P_SEVERE, duration, state, Sol, P, timestep, tmax, deaths, total, total_infected, Iters, dIters, Pmax, lock, parsed, xScaleTime, xScaleTimeInv, indexToTime, checked, active, active_, ode_eqn, p_num_ind, get_d, milestones, log;
+    	let Time_to_death, logN, N, I0, R0, D_incubation, D_infectious, D_recovery_mild, D_recovery_severe, D_hospital_lag, D_death, CFR, InterventionTime, InterventionAmt, Time, Xmax, dt, P_SEVERE, duration, state, Sol, P, timestep, tmax, deaths, total, total_infected, Iters, dIters, Pmax, lock, parsed, xScaleTime, xScaleTimeInv, indexToTime, checked, active, active_, ode_eqn, p_num_ind, get_d, milestones, log;
 
-    	$$self.$$.update = ($$dirty = { logN: 1, Time_to_death: 1, D_infectious: 1, I0: 1, R0: 1, D_incbation: 1, D_recovery_mild: 1, D_recovery_severe: 1, CFR: 1, InterventionTime: 1, InterventionAmt: 1, D_hospital_lag: 1, P_SEVERE: 1, dt: 1, N: 1, D_death: 1, duration: 1, Sol: 1, P: 1, checked: 1, tmax: 1, width: 1, active: 1, Iters: 1, Rt_s: 1, Tinc_s: 1, Tinf_s: 1, dIters: 1, indexToTime: 1 }) => {
+    	$$self.$$.update = ($$dirty = { logN: 1, Time_to_death: 1, D_infectious: 1, I0: 1, R0: 1, D_incubation: 1, D_recovery_mild: 1, D_recovery_severe: 1, D_hospital_lag: 1, CFR: 1, InterventionTime: 1, InterventionAmt: 1, P_SEVERE: 1, isMounted: 1, state: 1, dt: 1, N: 1, D_death: 1, duration: 1, Sol: 1, P: 1, checked: 1, tmax: 1, width: 1, active: 1, Iters: 1, Rt_s: 1, Tinc_s: 1, Tinf_s: 1, dIters: 1, indexToTime: 1 }) => {
     		if ($$dirty.logN) { $$invalidate('N', N                 = Math.exp(logN)); }
     		if ($$dirty.Time_to_death || $$dirty.D_infectious) { $$invalidate('D_death', D_death           = Time_to_death - D_infectious); }
-    		if ($$dirty.Time_to_death || $$dirty.logN || $$dirty.I0 || $$dirty.R0 || $$dirty.D_incbation || $$dirty.D_infectious || $$dirty.D_recovery_mild || $$dirty.D_recovery_severe || $$dirty.CFR || $$dirty.InterventionTime || $$dirty.InterventionAmt || $$dirty.D_hospital_lag || $$dirty.P_SEVERE) { $$invalidate('state', state = location.protocol + '//' + location.host + location.pathname + "?" + queryString.stringify({"Time_to_death":Time_to_death,
-                       "logN":logN,
-                       "I0":I0,
-                       "R0":R0,
-                       "D_incbation":D_incbation,
-                       "D_infectious":D_infectious,
-                       "D_recovery_mild":D_recovery_mild,
-                       "D_recovery_severe":D_recovery_severe,
-                       "CFR":CFR,
-                       "InterventionTime":InterventionTime,
-                       "InterventionAmt":InterventionAmt,
-                       "D_hospital_lag":D_hospital_lag,
-                       "P_SEVERE": P_SEVERE})); }
-    		if ($$dirty.dt || $$dirty.N || $$dirty.I0 || $$dirty.R0 || $$dirty.D_incbation || $$dirty.D_infectious || $$dirty.D_recovery_mild || $$dirty.D_hospital_lag || $$dirty.D_recovery_severe || $$dirty.D_death || $$dirty.P_SEVERE || $$dirty.CFR || $$dirty.InterventionTime || $$dirty.InterventionAmt || $$dirty.duration) { $$invalidate('Sol', Sol            = get_solution(dt, N, I0, R0, D_incbation, D_infectious, D_recovery_mild, D_hospital_lag, D_recovery_severe, D_death, P_SEVERE, CFR, InterventionTime, InterventionAmt, duration)); }
+    		if ($$dirty.Time_to_death || $$dirty.logN || $$dirty.I0 || $$dirty.R0 || $$dirty.D_incubation || $$dirty.D_infectious || $$dirty.D_recovery_mild || $$dirty.D_recovery_severe || $$dirty.D_hospital_lag || $$dirty.CFR || $$dirty.InterventionTime || $$dirty.InterventionAmt || $$dirty.P_SEVERE) { $$invalidate('state', state = {
+            "time_to_death": Time_to_death,
+            "logn": logN,
+            "i0": I0,
+            "r0": R0,
+            "d_incubation": D_incubation,
+            "d_infectious": D_infectious,
+            "d_recovery_mild": D_recovery_mild,
+            "d_recovery_severe": D_recovery_severe,
+            "d_hospital_lag": D_hospital_lag,
+            "cfr": CFR,
+            "intervention_time": InterventionTime,
+            "intervention_amt": InterventionAmt,
+            "p_severe":  P_SEVERE
+          }); }
+    		if ($$dirty.isMounted || $$dirty.state) { if (isMounted) {
+            history.replaceState(state, "", formatPageUrl(state));
+          } }
+    		if ($$dirty.dt || $$dirty.N || $$dirty.I0 || $$dirty.R0 || $$dirty.D_incubation || $$dirty.D_infectious || $$dirty.D_recovery_mild || $$dirty.D_hospital_lag || $$dirty.D_recovery_severe || $$dirty.D_death || $$dirty.P_SEVERE || $$dirty.CFR || $$dirty.InterventionTime || $$dirty.InterventionAmt || $$dirty.duration) { $$invalidate('Sol', Sol            = get_solution(dt, N, I0, R0, D_incubation, D_infectious, D_recovery_mild, D_hospital_lag, D_recovery_severe, D_death, P_SEVERE, CFR, InterventionTime, InterventionAmt, duration)); }
     		if ($$dirty.Sol) { $$invalidate('P', P              = Sol["P"].slice(0,100)); }
     		if ($$dirty.dt) { $$invalidate('timestep', timestep       = dt); }
     		if ($$dirty.dt) { $$invalidate('tmax', tmax           = dt*100); }
@@ -26166,7 +26168,7 @@
     	$$invalidate('logN', logN              = Math.log(7e6));
     	$$invalidate('I0', I0                = 1);
     	$$invalidate('R0', R0                = 2.2);
-    	$$invalidate('D_incbation', D_incbation       = 5.2);
+    	$$invalidate('D_incubation', D_incubation       = 5.2);
     	$$invalidate('D_infectious', D_infectious      = 2.9);
     	$$invalidate('D_recovery_mild', D_recovery_mild   = (14 - 2.9));
     	$$invalidate('D_recovery_severe', D_recovery_severe = (31.5 - 2.9));
@@ -26197,7 +26199,7 @@
     		N,
     		I0,
     		R0,
-    		D_incbation,
+    		D_incubation,
     		D_infectious,
     		D_recovery_mild,
     		D_recovery_severe,
