@@ -14,7 +14,8 @@
 
   import katex from 'katex';
 
-  const legendheight = 67 
+  let isMounted = false
+  const legendheight = 67
 
   function range(n){
     return Array(n).fill().map((_, i) => i);
@@ -63,14 +64,14 @@
   $: N                 = Math.exp(logN)
   $: I0                = 1
   $: R0                = 2.2
-  $: D_incbation       = 5.2       
-  $: D_infectious      = 2.9 
-  $: D_recovery_mild   = (14 - 2.9)  
+  $: D_incubation       = 5.2
+  $: D_infectious      = 2.9
+  $: D_recovery_mild   = (14 - 2.9)
   $: D_recovery_severe = (31.5 - 2.9)
   $: D_hospital_lag    = 5
-  $: D_death           = Time_to_death - D_infectious 
-  $: CFR               = 0.02  
-  $: InterventionTime  = 100  
+  $: D_death           = Time_to_death - D_infectious
+  $: CFR               = 0.02
+  $: InterventionTime  = 100
   $: InterventionAmt   = 1/3
   $: Time              = 220
   $: Xmax              = 110000
@@ -78,22 +79,31 @@
   $: P_SEVERE          = 0.2
   $: duration          = 7*12*1e10
 
-  $: state = location.protocol + '//' + location.host + location.pathname + "?" + queryString.stringify({"Time_to_death":Time_to_death,
-               "logN":logN,
-               "I0":I0,
-               "R0":R0,
-               "D_incbation":D_incbation,
-               "D_infectious":D_infectious,
-               "D_recovery_mild":D_recovery_mild,
-               "D_recovery_severe":D_recovery_severe,
-               "CFR":CFR,
-               "InterventionTime":InterventionTime,
-               "InterventionAmt":InterventionAmt,
-               "D_hospital_lag":D_hospital_lag,
-               "P_SEVERE": P_SEVERE})
+  $: state = {
+    "time_to_death": Time_to_death,
+    "logn": logN,
+    "i0": I0,
+    "r0": R0,
+    "d_incubation": D_incubation,
+    "d_infectious": D_infectious,
+    "d_recovery_mild": D_recovery_mild,
+    "d_recovery_severe": D_recovery_severe,
+    "d_hospital_lag": D_hospital_lag,
+    "cfr": CFR,
+    "intervention_time": InterventionTime,
+    "intervention_amt": InterventionAmt,
+    "p_severe":  P_SEVERE
+  }
 
-  function get_solution(dt, N, I0, R0, D_incbation, D_infectious, D_recovery_mild, D_hospital_lag, D_recovery_severe, D_death, P_SEVERE, CFR, InterventionTime, InterventionAmt, duration) {
+  function formatPageUrl(data) {
+    return `${location.protocol}//${location.host}${location.pathname}?${queryString.stringify(data)}`;
+  }
 
+  $: if (isMounted) {
+    history.replaceState(state, "", formatPageUrl(state));
+  }
+
+  function get_solution(dt, N, I0, R0, D_incubation, D_infectious, D_recovery_mild, D_hospital_lag, D_recovery_severe, D_death, P_SEVERE, CFR, InterventionTime, InterventionAmt, duration) {
     var interpolation_steps = 40
     var steps = 110*interpolation_steps
     var dt = dt/interpolation_steps
@@ -110,7 +120,7 @@
       } else {
         var beta = R0/(D_infectious)
       }
-      var a     = 1/D_incbation
+      var a     = 1/D_incubation
       var gamma = 1/D_infectious
       
       var S        = x[0] // Susectable
@@ -173,7 +183,7 @@
     return P.reduce((max, b) => Math.max(max, sum(b, checked) ), sum(P[0], checked) )
   }
 
-  $: Sol            = get_solution(dt, N, I0, R0, D_incbation, D_infectious, D_recovery_mild, D_hospital_lag, D_recovery_severe, D_death, P_SEVERE, CFR, InterventionTime, InterventionAmt, duration)
+  $: Sol            = get_solution(dt, N, I0, R0, D_incubation, D_infectious, D_recovery_mild, D_hospital_lag, D_recovery_severe, D_death, P_SEVERE, CFR, InterventionTime, InterventionAmt, duration)
   $: P              = Sol["P"].slice(0,100)
   $: timestep       = dt
   $: tmax           = dt*100
@@ -288,19 +298,22 @@
 
     if (typeof window !== 'undefined') {
       parsed = queryString.parse(window.location.search)
-      if (!(parsed.logN === undefined)) {logN = parsed.logN}
-      if (!(parsed.I0 === undefined)) {I0 = parseFloat(parsed.I0)}
-      if (!(parsed.R0 === undefined)) {R0 = parseFloat(parsed.R0)}
-      if (!(parsed.D_incbation === undefined)) {D_incbation = parseFloat(parsed.D_incbation)}
-      if (!(parsed.D_infectious === undefined)) {D_infectious = parseFloat(parsed.D_infectious)}
-      if (!(parsed.D_recovery_mild === undefined)) {D_recovery_mild = parseFloat(parsed.D_recovery_mild)}
-      if (!(parsed.D_recovery_severe === undefined)) {D_recovery_severe = parseFloat(parsed.D_recovery_severe)}
-      if (!(parsed.CFR === undefined)) {CFR = parseFloat(parsed.CFR)}
-      if (!(parsed.InterventionTime === undefined)) {InterventionTime = parseFloat(parsed.InterventionTime)}
-      if (!(parsed.InterventionAmt === undefined)) {InterventionAmt = parseFloat(parsed.InterventionAmt)}
-      if (!(parsed.D_hospital_lag === undefined)) {D_hospital_lag = parseFloat(parsed.D_hospital_lag)}
-      if (!(parsed.P_SEVERE === undefined)) {P_SEVERE = parseFloat(parsed.P_SEVERE)}
+
+      if (!(parsed.logn === undefined)) {logN = parsed.logn}
+      if (!(parsed.i0 === undefined)) {I0 = parseFloat(parsed.i0)}
+      if (!(parsed.r0 === undefined)) {R0 = parseFloat(parsed.r0)}
+      if (!(parsed.d_incubation === undefined)) {D_incubation = parseFloat(parsed.d_incubation)}
+      if (!(parsed.d_infectious === undefined)) {D_infectious = parseFloat(parsed.d_infectious)}
+      if (!(parsed.d_recovery_mild === undefined)) {D_recovery_mild = parseFloat(parsed.d_recovery_mild)}
+      if (!(parsed.d_recovery_severe === undefined)) {D_recovery_severe = parseFloat(parsed.d_recovery_severe)}
+      if (!(parsed.cfr === undefined)) {CFR = parseFloat(parsed.cfr)}
+      if (!(parsed.intervention_time === undefined)) {InterventionTime = parseFloat(parsed.intervention_time)}
+      if (!(parsed.intervention_amt === undefined)) {InterventionAmt = parseFloat(parsed.intervention_amt)}
+      if (!(parsed.d_hospital_lag === undefined)) {D_hospital_lag = parseFloat(parsed.d_hospital_lag)}
+      if (!(parsed.p_severe === undefined)) {P_SEVERE = parseFloat(parsed.p_severe)}
     }
+
+    isMounted = true;
   });
 
   function lock_yaxis(){
@@ -944,14 +957,14 @@
       <div class="paneldesc">Measure of contagiousness: the number of secondary infections each infected individual produces. <br></div>
       </div>
       <div class="slidertext">{R0}</div>
-      <input class="range" type=range bind:value={R0} min=0.01 max=10 step=0.01> 
+      <input class="range" type=range bind:value={R0} min=0.01 max=10 step=0.01>
     </div>
 
     <div class="column">
       <div class="paneltitle">Transmission Times</div>
       <div class="paneldesc" style="height:30px">Length of incubation period, {@html math_inline("T_{\\text{inc}}")}.<br></div>
-      <div class="slidertext">{(D_incbation).toFixed(2)} days</div>
-      <input class="range" style="margin-bottom: 8px"type=range bind:value={D_incbation} min={0.15} max=24 step=0.0001>
+      <div class="slidertext">{(D_incubation).toFixed(2)} days</div>
+      <input class="range" style="margin-bottom: 8px"type=range bind:value={D_incubation} min={0.15} max=24 step=0.0001>
       <div class="paneldesc" style="height:29px; border-top: 1px solid #EEE; padding-top: 10px">Duration patient is infectious, {@html math_inline("T_{\\text{inf}}")}.<br></div>
       <div class="slidertext">{D_infectious} Days</div>
       <input class="range" type=range bind:value={D_infectious} min={0} max=24 step=0.01>
