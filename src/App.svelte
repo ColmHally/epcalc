@@ -58,25 +58,58 @@
     return r;
   }
 
+  const defaultParams = {
+    "time_to_death": 32,
+    "logn": Math.log(7e6),
+    "i0": 1,
+    "r0": 2.2,
+    "d_incubation": 5.2,
+    "d_infectious": 2.9,
+    "d_recovery_mild": (14 - 2.9),
+    "d_recovery_severe": (31.5 - 2.9),
+    "d_hospital_lag": 5,
+    "cfr": 0.02,
+    "intervention_time": 100,
+    "intervention_amt": 1/3,
+    "p_severe":  0.2,
+  }
 
-  $: Time_to_death     = 32
-  $: logN              = Math.log(7e6)
-  $: N                 = Math.exp(logN)
-  $: I0                = 1
-  $: R0                = 2.2
-  $: D_incubation       = 5.2
-  $: D_infectious      = 2.9
-  $: D_recovery_mild   = (14 - 2.9)
-  $: D_recovery_severe = (31.5 - 2.9)
-  $: D_hospital_lag    = 5
+  $: Time_to_death     = defaultParams.time_to_death
+  $: logN              = defaultParams.logn
+  $: I0                = defaultParams.i0
+  $: R0                = defaultParams.r0
+  $: D_incubation      = defaultParams.d_incubation
+  $: D_infectious      = defaultParams.d_infectious
+  $: D_recovery_mild   = defaultParams.d_recovery_mild
+  $: D_recovery_severe = defaultParams.d_recovery_severe
+  $: D_hospital_lag    = defaultParams.d_hospital_lag
+  $: CFR               = defaultParams.cfr
+  $: InterventionTime  = defaultParams.intervention_time
+  $: InterventionAmt   = defaultParams.intervention_amt
+  $: P_SEVERE          = defaultParams.p_severe
+
+  function resetToDefaults() {
+    Time_to_death     = defaultParams.time_to_death
+    logN              = defaultParams.logn
+    I0                = defaultParams.i0
+    R0                = defaultParams.r0
+    D_incubation      = defaultParams.d_incubation
+    D_infectious      = defaultParams.d_infectious
+    D_recovery_mild   = defaultParams.d_recovery_mild
+    D_recovery_severe = defaultParams.d_recovery_severe
+    D_hospital_lag    = defaultParams.d_hospital_lag
+    CFR               = defaultParams.cfr
+    InterventionTime  = defaultParams.intervention_time
+    InterventionAmt   = defaultParams.intervention_amt
+    P_SEVERE          = defaultParams.p_severe
+  }
+
   $: D_death           = Time_to_death - D_infectious
-  $: CFR               = 0.02
-  $: InterventionTime  = 100
-  $: InterventionAmt   = 1/3
+  $: N                 = Math.exp(logN)
+
   $: Time              = 220
   $: Xmax              = 110000
   $: dt                = 2
-  $: P_SEVERE          = 0.2
   $: duration          = 7*12*1e10
 
   $: state = {
@@ -92,7 +125,7 @@
     "cfr": CFR,
     "intervention_time": InterventionTime,
     "intervention_amt": InterventionAmt,
-    "p_severe":  P_SEVERE
+    "p_severe":  P_SEVERE,
   }
 
   function formatPageUrl(data) {
@@ -282,6 +315,7 @@
 
     return drag().on("drag", dragged).on("start", dragstarted).on("end", dragend)
   }
+
 
 
   $: parsed = "";
@@ -712,7 +746,7 @@
         <div class="legend" style="position:absolute;">
           <div class="legendtitle">Hospitalized</div>
           <div style="padding-top: 3px; padding-bottom: 1px">
-          <div class="legendtextnum"><span style="font-size:12px; padding-right:3px; color:#CCC">∑</span> <i>{formatNumber(Math.round(N*(Iters[active_][5]+Iters[active_][6]) ))}
+          <div class="legendtextnum"><span style="font-size:12px; padding-right:3px; color:#CCC">∑</span> <i>{formatNumber(Math.round(N*(Iters[active_][5]+Iters[active_][6])))}
                                   ({ (100*(Iters[active_][5]+Iters[active_][6])).toFixed(2) }%)</div>
           </div>
           <div class="legendtextnum"><span style="font-size:12px; padding-right:2px; color:#CCC">Δ</span> <i>{formatNumber(Math.round(N*(get_d(active_)[5]+get_d(active_)[6]))) } / day</i>
@@ -933,14 +967,16 @@
 </div>
 
 
-<div style="height:220px;">
+<div style="">
   <div class="minorTitle">
     <div style="margin: 0px 0px 5px 4px" class="minorTitleColumn">Transmission Dynamics</div>
     <div style="flex: 0 0 20; width:20px"></div>
     <div style="margin: 0px 4px 5px 0px" class="minorTitleColumn">Clinical Dynamics</div>
+    <div>
+      <button on:click={resetToDefaults}>Reset</button>
+    </div>
   </div>
-  <div class = "row">
-
+  <div class="row">
     <div class="column">
       <div class="paneltitle">Population Inputs</div>
       <div class="paneldesc" style="height:30px">Size of population.<br></div>
@@ -1001,7 +1037,37 @@
       <div class="slidertext">{D_hospital_lag} Days</div>
       <input class="range" type=range bind:value={D_hospital_lag} min={0.5} max=100 step=0.01>
     </div>
+  </div>
 
+  <div class="row">
+    <table style="margin: 1em auto">
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Susceptible</th>
+          <th>Exposed</th>
+          <th>Infected</th>
+          <th>Removed</th>
+          <th>Recovered</th>
+          <th>Hospitalized</th>
+          <th>Fatalities</th>
+        </tr>
+      </thead>
+      <tbody>
+        {#each Iters as day, i}
+          <tr>
+            <td>Day {Math.round(indexToTime(i))}</td>
+            <td>{formatNumber(Math.round(N*Iters[i][0]))}</td>
+            <td>{formatNumber(Math.round(N*Iters[i][1]))}</td>
+            <td>{formatNumber(Math.round(N*Iters[i][2]))}</td>
+            <td>{formatNumber(Math.round(N*(1-Iters[i][0]-Iters[i][1]-Iters[i][2])+I0))}</td>
+            <td>{formatNumber(Math.round(N*(Iters[i][7]+Iters[i][8])))}</td>
+            <td>{formatNumber(Math.round(N*(Iters[i][5]+Iters[i][6])))}</td>
+            <td>{formatNumber(Math.round(N*Iters[i][9]))}</td>
+          </tr>
+        {/each}
+      </tbody>
+    </table>
   </div>
 </div>
 
