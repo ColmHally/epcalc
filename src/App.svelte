@@ -317,7 +317,6 @@
   }
 
 
-
   $: parsed = "";
   onMount(async () => {
     var drag_callback_y = drag_y()
